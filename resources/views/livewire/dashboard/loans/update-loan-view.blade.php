@@ -10,13 +10,13 @@
                         <div class="col-lg-6 mb-2">
                             <div class="mb-3">
                                 <label class="text-label form-label">Borrower*</label>
-                                <input disabled type="text" value="{{ $user->fname.' '.$user->lname}}" class="form-control">                      
-                                <input type="hidden" value="{{ $user->id }}" name="borrower_id" class="form-control">                      
+                                <input disabled type="text" value="{{ $user->fname.' '.$user->lname}}" class="form-control">
+                                <input type="hidden" value="{{ $user->id }}" name="borrower_id" class="form-control">
                             </div>
                         </div>
                         <input type="hidden" name="loan_id" value="{{$loan->id}}">
                         <input type="hidden" name="old_amount" value="{{$loan->amount}}">
-                        
+
                         <input type="hidden" name="loan_status" value="{{$loan->status}}">
                         <div class="col-lg-6 mb-2">
                             <div class="mb-3">
@@ -32,7 +32,7 @@
                                 </select>
                             </div>
                         </div>
-                        
+
                         <div class="col-lg-6 mb-2">
                             <div class="mb-3">
                                 <label class="text-label form-label">Amount (ZMW)</label>
@@ -151,7 +151,7 @@
                                         <option value="Spouse">Spouse</option>
                                         <option value="Work Mate">Work Mate</option>
                                         <option value="Close Friend">Close Friend</option>
-                                    </select> 
+                                    </select>
                                     {{-- <small id="validg_relation22" style="color:red">Missing information!</small> --}}
                                 </div>
                             </div>
@@ -162,7 +162,7 @@
                                         <option data-display="Select">{{ $loan->g_gender }}</option>
                                         <option value="Male">Male</option>
                                         <option value="Female">Female</option>
-                                    </select> 
+                                    </select>
                                     {{-- <small id="validg_gender22" style="color:red">Missing information!</small> --}}
                                 </div>
                             </div>
@@ -205,7 +205,7 @@
                                         <option value="Spouse">Spouse</option>
                                         <option value="Work Mate">Work Mate</option>
                                         <option value="Close Friend">Close Friend</option>
-                                    </select> 
+                                    </select>
                                 </div>
                             </div>
                             <div class="col-lg-6 mb-2">
@@ -215,7 +215,7 @@
                                         <option data-display="Select">{{ $loan->g2_gender }}</option>
                                         <option value="Male">Male</option>
                                         <option value="Female">Female</option>
-                                    </select> 
+                                    </select>
                                 </div>
                             </div>
                         </div>
@@ -264,7 +264,7 @@
                                         <option value="Spouse">Spouse</option>
                                         <option value="Work Mate">Work Mate</option>
                                         <option value="Close Friend">Close Friend</option>
-                                    </select> 
+                                    </select>
                                     {{-- <small id="validnok_relation2" style="color:red">Missing information!</small> --}}
                                 </div>
                             </div>
@@ -275,7 +275,7 @@
                                         <option data-display="Select">{{$user->nextkin->first()->gender}}</option>
                                         <option value="Male">Male</option>
                                         <option value="Female">Female</option>
-                                    </select> 
+                                    </select>
                                     {{-- <small id="validnok_gender2" style="color:red">Missing information!</small> --}}
                                 </div>
                             </div>
@@ -316,7 +316,7 @@
             </form>
             <div id="loaderloanupdate" class="mx-auto">
                 <div class="container-fluid content-center justify-center items-center">
-                    <img width="60" src="{{ asset('public/loader/loading.gif') }}">
+                    <img width="60" src="{{ asset('loader/loading.gif') }}">
                     <span>Please wait a minute</span>
                 </div>
             </div>
@@ -327,7 +327,7 @@
                         <div class="media">
                             <div class="alert-left-icon-big">
                                 <span>
-                                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="me-2"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>	
+                                    <svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="me-2"><polyline points="9 11 12 14 22 4"></polyline><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"></path></svg>
                                 </span>
                             </div>
                             <div class="media-body">
@@ -342,13 +342,13 @@
             </div>
             @endif
         </div>
-    </div>  
+    </div>
 </div>
-<script type="text/javascript">    
+<script type="text/javascript">
     const type = '{{ $loan_type }}';
     document.getElementById("updateloandetails").style.display = "block";
     document.getElementById("loaderloanupdate").style.display = "none";
-    
+
     if(type !== 'Asset Financing'){
         document.getElementById("nok2").style.display = "block";
         document.getElementById("guarantorLoanRef2").style.display = "none";

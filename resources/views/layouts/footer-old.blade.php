@@ -1,6 +1,6 @@
 <footer class="footer-area">
     <div class="right-shape">
-        <img src="{{ asset('public/box/images/shapes/footer-right-shape.png') }}" alt="">
+        <img src="{{ asset('box/images/shapes/footer-right-shape.png') }}" alt="">
     </div>
 
     <!--Start Footer Top-->
@@ -88,9 +88,9 @@
                         <div class="footer-widget-links">
                             <ul>
                                 <li><a href="#">Saving with us</a></li>
-                                
+
                                 <li><a href="#">Payments</a></li>
-                    
+
                             </ul>
                         </div>
                     </div>
@@ -112,7 +112,7 @@
                         <div class="our-company-info">
                             <div class="footer-logo-style1">
                                 <a href="index.php">
-                                    <img src="{{ asset('public/box/images/footer/footer-logo-1.png') }}" alt="BTF" title="">
+                                    <img src="{{ asset('box/images/footer/footer-logo-1.png') }}" alt="BTF" title="">
                                 </a>
                             </div>
                             <div class="copyright-text">
@@ -130,7 +130,7 @@
                 <!--Start single footer widget-->
                 <div class="col-xl-4 col-lg-4 col-md-12 col-sm-12">
                     <div class="single-footer-widget marbtm50">
-                        <div class="footer-widget-contact-info">    
+                        <div class="footer-widget-contact-info">
                             <ul>
                                 <li>
                                     <h3>

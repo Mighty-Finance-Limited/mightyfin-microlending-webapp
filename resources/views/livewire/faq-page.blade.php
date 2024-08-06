@@ -25,7 +25,7 @@
 
 
 <!-- subheader begin -->
-<div class="page-header" style="background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), rgba(0, 0, 0, 0.2) url('{{ asset("public/web/images/faq.jpg") }}') no-repeat center;">
+<div class="page-header" style="background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), rgba(0, 0, 0, 0.2) url('{{ asset("web/images/faq.jpg") }}') no-repeat center;">
     <div class="container">
         <div class="row">
             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
@@ -52,7 +52,7 @@
                         <li class="nav-item">
                         </li>
                         <li class="nav-item">
-                
+
                         </li>
                     </ul>
                 </div>
@@ -83,8 +83,8 @@
                                         </div>
                                         <div id="collapseOne" class="collapse show" aria-labelledby="faqOne" data-parent="#Faqaccordionsone">
                                             <div class="card-body">
-                                                MFS's funding application takes place online. Go to <a href="http://localhost/mightyfinance/products.php">http://www.mightyfinance.co.zm</a> and click on 
-                                                the Apply Now button, then simply follow the steps and fill in the information required. 
+                                                MFS's funding application takes place online. Go to <a href="http://localhost/mightyfinance/products.php">http://www.mightyfinance.co.zm</a> and click on
+                                                the Apply Now button, then simply follow the steps and fill in the information required.
                                                 You will also need to supply some recent financial information.
                                             </div>
                                         </div>
@@ -100,7 +100,7 @@
                                         </div>
                                         <div id="collapseTwo" class="collapse" aria-labelledby="faqTwo" data-parent="#Faqaccordionsone">
                                             <div class="card-body">
-                                                Go to http://www.mightyfinance.co.zm and navigate to Log In at the top right-hand side of your screen. 
+                                                Go to http://www.mightyfinance.co.zm and navigate to Log In at the top right-hand side of your screen.
                                                 To apply for a re-advance, you would need to resubmit your financial information.
                                             </div>
                                         </div>
@@ -131,8 +131,8 @@
                                         </div>
                                         <div id="collapseFour" class="collapse" aria-labelledby="faqFour" data-parent="#Faqaccordionsone">
                                             <div class="card-body">
-                                                Provided we have all the necessary information, the assessment and allocation of funds can take place within 24 hours. 
-                                                To speed up the approval process, we recommend linking your online bank account, which allows us to see your bank 
+                                                Provided we have all the necessary information, the assessment and allocation of funds can take place within 24 hours.
+                                                To speed up the approval process, we recommend linking your online bank account, which allows us to see your bank
                                                 transactions in read-only format.
                                             </div>
                                         </div>
@@ -197,8 +197,8 @@
                                         </div>
                                         <div id="collapseEight" class="collapse" aria-labelledby="faqEight" data-parent="#Faqaccordiontwo">
                                             <div class="card-body">
-                                                Our process is much faster and takes place completely online. We require no paperwork. 
-                                                Our costs are transparent and agreed upon upfront. We do not charge admin or initiation 
+                                                Our process is much faster and takes place completely online. We require no paperwork.
+                                                Our costs are transparent and agreed upon upfront. We do not charge admin or initiation
                                                 fees and there are no penalties for settling early.
                                             </div>
                                         </div>
@@ -225,7 +225,7 @@
                         <div class="row">
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
                                 <div class="accordion" id="FaqaccordionThree">
-                                    
+
                                     <div class="card mb-1">
                                         <div class="card-header" id="headingEleven">
                                             <h4 class="mb-0">
@@ -236,12 +236,12 @@
                                         </div>
                                         <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-parent="#FaqaccordionThree">
                                             <div class="card-body">
-                                                No, we only offer business advances and business credit to registered Zambian companies, 
+                                                No, we only offer business advances and business credit to registered Zambian companies,
                                                 close corporations and sole proprietors who are VAT registered.
                                             </div>
                                         </div>
                                     </div>
-                                    
+
                                     <div class="card mb-1">
                                         <div class="card-header" id="headingThirteen">
                                             <h4 class="mb-0">
@@ -252,7 +252,7 @@
                                         </div>
                                         <div id="collapseThirteen" class="collapse" aria-labelledby="headingTwelve" data-parent="#FaqaccordionThree">
                                             <div class="card-body">
-                                                You need a successful trading history of at least one year, as well as a turnover 
+                                                You need a successful trading history of at least one year, as well as a turnover
                                                 of at least K500,000 per year to qualify for MFS business funding.
                                             </div>
                                         </div>
@@ -290,7 +290,7 @@
                             </div>
                         </div>
                     </div>
-                    
+
                     <div class="section-space40">
                         <div class="row">
                             <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
@@ -305,7 +305,7 @@
                                         </div>
                                         <div id="collapseSeventeen" class="collapse" aria-labelledby="headingSeventeen" data-parent="#FaqaccordionFive">
                                             <div class="card-body">
-                                                You will receive an email notification that the debit order was unsuccessful and will subsequently be contacted by our collections department. 
+                                                You will receive an email notification that the debit order was unsuccessful and will subsequently be contacted by our collections department.
                                                 A late payment fee will be charged. If no action is taken to settle the outstanding amount, we will then proceed with legal action.
                                             </div>
                                         </div>
@@ -320,12 +320,12 @@
                                         </div>
                                         <div id="collapseEighteen" class="collapse" aria-labelledby="headingEighteen" data-parent="#FaqaccordionFive">
                                             <div class="card-body">
-                                            Go to the Login page and navigate to Forgot Your Password? You will then receive an email to reset your password. 
+                                            Go to the Login page and navigate to Forgot Your Password? You will then receive an email to reset your password.
                                             Our support team cannot do so on your behalf.
                                             </div>
                                         </div>
                                     </div>
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -335,7 +335,7 @@
         </div>
     </div>
 </div>
-<?php 
+<?php
 //WENANO
 include 'public/web/components/footer.php' ?>
 

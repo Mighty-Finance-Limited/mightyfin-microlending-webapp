@@ -1,5 +1,5 @@
 <div>
-<div class="page-header" style="background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), rgba(0, 0, 0, 0.2) url('{{ asset("public/web/images/1images-page-header.jpg") }}') no-repeat center;">
+<div class="page-header" style="background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), rgba(0, 0, 0, 0.2) url('{{ asset("web/images/1images-page-header.jpg") }}') no-repeat center;">
     <div class="container">
         <div class="row">
             <div class="col-md-12 ">
@@ -28,7 +28,7 @@
                         </div>
                     </div>
                 </div>
-               
+
             </div>
         </div>
     </div>
@@ -88,7 +88,7 @@
                                                         </div>
                                                         <div class="col-md-12 col-xs-12">
                                                             <button class="wpcf7-form-control wpcf7-submit btn btn-default" wire:click.prevent="send()" wire:loading.attr="disabled" :disabled="isDisabled">
-                                                                
+
                                                                 <span class="txt">
                                                                     <span>
                                                                         <svg

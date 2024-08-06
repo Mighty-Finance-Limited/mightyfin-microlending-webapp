@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Sign Up - Mighty Finance Solution</title>
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('public/images/m.jpg') }}">
-    <link href="{{ asset('public/theme/css/style.css') }}" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('images/m.jpg') }}">
+    <link href="{{ asset('theme/css/style.css') }}" rel="stylesheet">
     <script src="https://jsuites.net/v4/jsuites.js"></script>
     <link rel="stylesheet" href="https://jsuites.net/v4/jsuites.css" type="text/css" />
     <style>
@@ -283,10 +283,10 @@
     Scripts
     ***********************************-->
     <!-- Required vendors -->
-    <script src="{{ asset('public/theme/vendor/global/global.min.js') }}"></script>
-    <script src="{{ asset('public/theme/vendor/bootstrap-select/dist/js/bootstrap-select.min.js') }}"></script>
-    <script src="{{ asset('public/theme/js/custom.min.js') }}"></script>
-    <script src="{{ asset('public/theme/js/deznav-init.js') }}"></script>
+    <script src="{{ asset('theme/vendor/global/global.min.js') }}"></script>
+    <script src="{{ asset('theme/vendor/bootstrap-select/dist/js/bootstrap-select.min.js') }}"></script>
+    <script src="{{ asset('theme/js/custom.min.js') }}"></script>
+    <script src="{{ asset('theme/js/deznav-init.js') }}"></script>
 
 </body>
 

@@ -146,7 +146,7 @@
                     {{-- Illustrate No Loan --}}
                     <div class="container m-12 d-flex justify-content-center align-items-center">
                         <div class="col-12 text-center">
-                            <img width="300" src="{{ asset('public/mfs/admin/assets/media/illustrations/sigma-1/loan.png')}}" alt="">
+                            <img width="300" src="{{ asset('mfs/admin/assets/media/illustrations/sigma-1/loan.png')}}" alt="">
                             @role('user')
                             <div class="my-4">
                                 <a href="{{ route('new-loan') }}" class="btn btn-primary">
@@ -537,7 +537,7 @@
                 </div>
                 <div id="loaderloanrequest" class="mx-auto">
                     <div class="container-fluid content-center justify-center items-center">
-                        <img width="60" src="{{ asset('public/loader/loading.gif') }}">
+                        <img width="60" src="{{ asset('loader/loading.gif') }}">
                         <span>Please wait a minute</span>
                     </div>
                 </div>

@@ -14,8 +14,8 @@ use App\Traits\WalletTrait;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Session;
 
-class LoanApplicationController extends Controller
-{     
+class LoanApplicationContBkUP extends Controller
+{
     use EmailTrait, LoanTrait, UserTrait, WalletTrait;
     /**
      * Display a listing of the resource.
@@ -34,11 +34,11 @@ class LoanApplicationController extends Controller
      */
     public function getLoan(Request $req)
     {
-        $email = $req->toArray()['email']; 
-        $application = User::where('email', $email)->get()->toArray();  
+        $email = $req->toArray()['email'];
+        $application = User::where('email', $email)->get()->toArray();
         // $application = Application::where('email', $email)
         //                             ->where('status', 0)
-        //                             ->where('can_change', 0)->get()->first();             
+        //                             ->where('can_change', 0)->get()->first();
         if(!empty($application)){
             $data = 1;
             return response()->json($data, 200);
@@ -50,7 +50,7 @@ class LoanApplicationController extends Controller
 
     public function updateExistingLoan(Request $req)
     {
-        $email = $req->toArray()['email']; 
+        $email = $req->toArray()['email'];
         try{
             Application::where('email', $email)->update(['can_change' => 1]);
             $data = 1;
@@ -71,12 +71,12 @@ class LoanApplicationController extends Controller
     {
         $form = $request->toArray();
         dd($form);
-        if($request->file('tpin_file') !== null){               
-            $tpin_file = $request->file('tpin_file')->store('tpin_file', 'public');                
+        if($request->file('tpin_file') !== null){
+            $tpin_file = $request->file('tpin_file')->store('tpin_file', 'public');
         }
 
-        if($request->file('payslip_file') !== null){               
-            $payslip_file = $request->file('payslip_file')->store('payslip_file', 'public');         
+        if($request->file('payslip_file') !== null){
+            $payslip_file = $request->file('payslip_file')->store('payslip_file', 'public');
         }
 
         $register = [
@@ -133,7 +133,7 @@ class LoanApplicationController extends Controller
             ];
             $this->createNOK($nok);
         }
-        
+
         $this->apply_loan($data);
         // $application = $this->apply_loan($data);
         $mail = [
@@ -151,8 +151,8 @@ class LoanApplicationController extends Controller
 
         if($request->wantsJson()){
             return response()->json([
-                "status" => 200, 
-                "success" => true, 
+                "status" => 200,
+                "success" => true,
                 "message" => "Your loan has been sent."
                 // "data" => $application
             ]);
@@ -162,39 +162,39 @@ class LoanApplicationController extends Controller
             }else{
                 return redirect()->to('/contact-us');
             }
-        }       
+        }
     }
 
     public function updateFiles(Request $request)
     {
         DB::beginTransaction();
-        $i = auth()->user();   
+        $i = auth()->user();
         try {
             if($request->file('nrc_file') !== null){
-                $nrc_file = $request->file('nrc_file')->store('nrc_file', 'public'); 
+                $nrc_file = $request->file('nrc_file')->store('nrc_file', 'public');
                 $user = Application::where('user_id',auth()->user()->id)->where('status', 0)->where('complete', 0)->first();
                 $user->nrc_file = $nrc_file;
-                $user->save();      
+                $user->save();
             }
-    
-            if($request->file('tpin_file') !== null){               
-                $tpin_file = $request->file('tpin_file')->store('tpin_file', 'public');   
+
+            if($request->file('tpin_file') !== null){
+                $tpin_file = $request->file('tpin_file')->store('tpin_file', 'public');
                 $user = Application::where('user_id',auth()->user()->id)->where('status', 0)->where('complete', 0)->first();
                 $user->tpin_file = $tpin_file;
-                $user->save();           
+                $user->save();
             }
-    
-            if($request->file('payslip_file') !== null){               
-                $payslip_file = $request->file('payslip_file')->store('payslip_file', 'public');  
+
+            if($request->file('payslip_file') !== null){
+                $payslip_file = $request->file('payslip_file')->store('payslip_file', 'public');
                 $user = Application::where('user_id',auth()->user()->id)->where('status', 0)->where('complete', 0)->first();
                 $user->payslip_file = $payslip_file;
-                $user->save();        
+                $user->save();
             }
 
             if($i->id_type !== null && $i->net_pay !== null && $i->basic_pay !== null && $i->address !== null && $i->phone !== null && $i->occupation !== null && $i->gender !== null && $i->nrc_no !== null && $i->dob !== null){
                 $loan = Application::where('status', 0)->where('complete', 0)
                             ->where('user_id', auth()->user()->id)->first();
-                            
+
                 if($loan !== null){
                     if($loan->tpin_file !== 'no file' && $loan->payslip_file !== 'no file' && $loan->nrc_file !== null){
                         // dd('here in loan');
@@ -227,14 +227,14 @@ class LoanApplicationController extends Controller
         try {
             $form = $request->toArray();
             // dd($form);
-            if($request->file('tpin_file') !== null){               
-                $tpin_file = $request->file('tpin_file')->store('tpin_file', 'public');                
+            if($request->file('tpin_file') !== null){
+                $tpin_file = $request->file('tpin_file')->store('tpin_file', 'public');
             }
-    
-            if($request->file('payslip_file') !== null){               
-                $payslip_file = $request->file('payslip_file')->store('payslip_file', 'public');         
+
+            if($request->file('payslip_file') !== null){
+                $payslip_file = $request->file('payslip_file')->store('payslip_file', 'public');
             }
-    
+
             $data = [
                 'user_id'=> auth()->user()->id,
                 'lname'=> $form['lname'],
@@ -245,14 +245,14 @@ class LoanApplicationController extends Controller
                 'gender'=> $form['gender'],
                 'type'=> $form['type'],
                 'repayment_plan'=> $form['repayment_plan'],
-    
+
                 'glname'=> $form['glname'],
                 'gfname'=> $form['gfname'],
                 'gemail'=> $form['gemail'],
                 'gphone'=> $form['gphone'],
                 'g_gender'=> $form['g_gender'],
                 'g_relation'=> $form['g_relation'],
-    
+
                 'g2lname'=> $form['g2lname'],
                 'g2fname'=> $form['g2fname'],
                 'g2email'=> $form['g2email'],
@@ -262,7 +262,7 @@ class LoanApplicationController extends Controller
 
                 'tpin_file' => $tpin_file ?? 'no file',
                 'payslip_file' => $payslip_file ?? 'no file',
-    
+
                 'complete' => 0
             ];
             if($form['type'] !== 'Asset Financing' ){
@@ -289,14 +289,14 @@ class LoanApplicationController extends Controller
                 'type' => 'loan-application',
                 'msg' => 'You have new a '.$form['type'].' loan application request, please visit the site to view more details'
             ];
-    
+
             $process = $this->send_loan_email($mail);
-    
+
             if($request->wantsJson()){
                 return response()->json([
-                    "status" => 200, 
-                    "success" => true, 
-                    "message" => "Your loan has been sent.", 
+                    "status" => 200,
+                    "success" => true,
+                    "message" => "Your loan has been sent.",
                     "data" => $application
                 ]);
             }else{
@@ -309,12 +309,12 @@ class LoanApplicationController extends Controller
                     Session::flash('success', "Loan created successfully, Email could not be sent to the Borrower. ");
                     return redirect()->back();
                 }
-            }  
+            }
         } catch (\Throwable $th) {
             DB::rollback();
             Session::flash('error', "Loan could not be created, check your internet connection and try again. ");
             return redirect()->back();
-        }     
+        }
     }
 
 
@@ -325,22 +325,22 @@ class LoanApplicationController extends Controller
             $form = $request->toArray();
             // dd($form);
             // Add Payslip and TPIN file if they are uploaded
-            if($request->file('tpin_file') !== null){               
-                $tpin_file = $request->file('tpin_file')->store('tpin_file', 'public');                
+            if($request->file('tpin_file') !== null){
+                $tpin_file = $request->file('tpin_file')->store('tpin_file', 'public');
             }
-            if($request->file('payslip_file') !== null){               
-                $payslip_file = $request->file('payslip_file')->store('payslip_file', 'public');         
+            if($request->file('payslip_file') !== null){
+                $payslip_file = $request->file('payslip_file')->store('payslip_file', 'public');
             }
-            if($request->file('nrc_file') !== null){               
-                $nrc_file = $request->file('nrc_file')->store('nrc_file', 'public');         
+            if($request->file('nrc_file') !== null){
+                $nrc_file = $request->file('nrc_file')->store('nrc_file', 'public');
             }
-    
+
             // Update the User's Basic & Net Pay (Automatically placed in the input field)
             $user = User::where('id', $form['borrower_id'])->first();
             $user->basic_pay = $form['basic_pay'];
             $user->net_pay = $form['net_pay'];
             $user->save();
-            
+
             // Collect the loan application data
             $data = [
                 'user_id'=> $form['borrower_id'],
@@ -359,18 +359,18 @@ class LoanApplicationController extends Controller
                 'gphone'=> $form['gphone'],
                 'g_gender'=> $form['g_gender'],
                 'g_relation'=> $form['g_relation'],
-    
+
                 'g2lname'=> $form['g2lname'],
                 'g2fname'=> $form['g2fname'],
                 'g2email'=> $form['g2email'],
                 'g2phone'=> $form['g2phone'],
                 'g2_gender'=> $form['g2_gender'],
                 'g2_relation'=> $form['g2_relation'],
-    
+
                 'tpin_file' => $tpin_file ?? 'no file',
                 'payslip_file' => $payslip_file ?? 'no file',
                 'nrc_file' => $nrc_file ?? 'no file',
-                
+
                 'doa' => $form['datepicker'],
                 'processed_by'=> auth()->user()->id
             ];
@@ -411,15 +411,15 @@ class LoanApplicationController extends Controller
                 'type' => 'loan-application',
                 'msg' => 'You have new a '.$form['type'].' loan application request from '.$user->fname.' '.$user->lname.', please visit the site to view more details'
             ];
-    
+
             // Email going to the Administrator
             $process = $this->send_loan_email($mail);
-    
+
             if($request->wantsJson()){
                 return response()->json([
-                    "status" => 200, 
-                    "success" => true, 
-                    "message" => "Your loan has been sent.", 
+                    "status" => 200,
+                    "success" => true,
+                    "message" => "Your loan has been sent.",
                     "data" => $application
                 ]);
             }else{
@@ -430,12 +430,12 @@ class LoanApplicationController extends Controller
                     DB::commit();
                     return redirect()->back();
                 }
-            } 
+            }
             DB::commit();
         } catch (\Throwable $th) {
             DB::rollback();
             return redirect()->back();
-        }      
+        }
     }
 
     public function updateLoanDetails(Request $request)
@@ -443,27 +443,27 @@ class LoanApplicationController extends Controller
         DB::beginTransaction();
         try {
             $form = $request->toArray();
-      
+
             // Update files
-            if($request->file('tpin_file') !== null){               
-                $tpin_file = $request->file('tpin_file')->store('tpin_file', 'public');                
+            if($request->file('tpin_file') !== null){
+                $tpin_file = $request->file('tpin_file')->store('tpin_file', 'public');
             }
-    
-            if($request->file('payslip_file') !== null){               
-                $payslip_file = $request->file('payslip_file')->store('payslip_file', 'public');         
+
+            if($request->file('payslip_file') !== null){
+                $payslip_file = $request->file('payslip_file')->store('payslip_file', 'public');
             }
-    
-            if($request->file('nrc_file') !== null){               
-                $nrc_file = $request->file('nrc_file')->store('nrc_file', 'public');         
+
+            if($request->file('nrc_file') !== null){
+                $nrc_file = $request->file('nrc_file')->store('nrc_file', 'public');
             }
-    
+
             // Update User info
             $loan_req = Application::where('id', $form['loan_id'])->first();
             $user = User::where('id', $form['borrower_id'])->first();
             $user->basic_pay = $form['basic_pay'];
             $user->net_pay = $form['net_pay'];
             $user->save();
-            
+
             // Update Application Details
             $data = [
                 'user_id'=> $form['borrower_id'],
@@ -482,7 +482,7 @@ class LoanApplicationController extends Controller
                 'gphone'=> $form['gphone'],
                 'g_gender'=> $form['g_gender'],
                 'g_relation'=> $form['g_relation'],
-    
+
                 'g2lname'=> $form['g2lname'],
                 'g2fname'=> $form['g2fname'],
                 'g2email'=> $form['g2email'],
@@ -517,7 +517,7 @@ class LoanApplicationController extends Controller
             if($form['loan_status'] == 1){
                 // Update borrower wallet
                 $this->updateUserWallet($form['borrower_id'], $form['amount'], $form['old_amount']);
-                
+
                 // Delete Withdrawal requests
                 WithdrawRequest::where('user_id', '=', $form['borrower_id'])->delete();
 
@@ -538,15 +538,15 @@ class LoanApplicationController extends Controller
                 'type' => 'loan-application',
                 'msg' => 'You have new a '.$form['type'].' loan application request from '.$user->fname.' '.$user->lname.' has been updated, please visit the site to view more details'
             ];
-    
+
             // Email going to the Administrator
             $process = $this->send_loan_email($mail);
-    
+
             if($request->wantsJson()){
                 return response()->json([
-                    "status" => 200, 
-                    "success" => true, 
-                    "message" => "Your loan has been sent.", 
+                    "status" => 200,
+                    "success" => true,
+                    "message" => "Your loan has been sent.",
                     "data" => $application
                 ]);
             }else{
@@ -557,15 +557,15 @@ class LoanApplicationController extends Controller
                     DB::commit();
                     return redirect()->back();
                 }
-            } 
-            
+            }
+
             DB::commit();
             return redirect()->route('view-loan-requests');
         } catch (\Throwable $th) {
             // dd($th);
             DB::rollback();
             return redirect()->back();
-        }      
+        }
     }
 
 

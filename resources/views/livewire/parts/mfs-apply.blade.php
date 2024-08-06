@@ -422,7 +422,7 @@
                                                 <div class="content">
                                                     <div class="mb-2">
                                                         <img width="50px"
-                                                            src="{{ asset('public/web/images/1.svg') }}" />
+                                                            src="{{ asset('web/images/1.svg') }}" />
                                                     </div>
                                                     <h2>Business Loan</h2>
                                                     <p class="skill">SME (coming soon)</p>

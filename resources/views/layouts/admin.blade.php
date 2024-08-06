@@ -15,17 +15,17 @@
     <meta property="og:url" content="https://keenthemes.com/metronic" />
     <meta property="og:site_name" content="Keenthemes | Metronic" />
     <link rel="canonical" href="https://preview.keenthemes.com/metronic8" />
-    <link rel="shortcut icon" href="{{ asset('public/images/m.jpg') }}" />
+    <link rel="shortcut icon" href="{{ asset('images/m.jpg') }}" />
     <!--begin::Fonts(mandatory for all pages)-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,400,500,600,700" />
     <!--end::Fonts-->
     <!--begin::Vendor Stylesheets(used for this page only)-->
-    <link href="{{ asset('public/mfs/admin/assets/plugins/custom/fullcalendar/fullcalendar.bundle.css')}}" rel="stylesheet" type="text/css" />
-    <link href="{{ asset('public/mfs/admin/assets/plugins/custom/datatables/datatables.bundle.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('mfs/admin/assets/plugins/custom/fullcalendar/fullcalendar.bundle.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('mfs/admin/assets/plugins/custom/datatables/datatables.bundle.css')}}" rel="stylesheet" type="text/css" />
     <!--end::Vendor Stylesheets-->
     <!--begin::Global Stylesheets Bundle(mandatory for all pages)-->
-    <link href="{{ asset('public/mfs/admin/assets/plugins/global/plugins.bundle.css')}}" rel="stylesheet" type="text/css" />
-    <link href="{{ asset('public/mfs/admin/assets/css/style.bundle.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('mfs/admin/assets/plugins/global/plugins.bundle.css')}}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('mfs/admin/assets/css/style.bundle.css')}}" rel="stylesheet" type="text/css" />
     <!--end::Global Stylesheets Bundle-->
     <script>
     // Frame-busting to prevent site from being loaded within a frame without permission (click-jacking) if (window.top != window.self) { window.top.location.replace(window.self.location.href); }
@@ -34,7 +34,7 @@
     <link rel="stylesheet" href="https://jsuites.net/v4/jsuites.css" type="text/css" />
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <link rel="stylesheet" href="{{ asset('public/mfs/admin/assets/css/wizard.min.css')}}">
+    <link rel="stylesheet" href="{{ asset('mfs/admin/assets/css/wizard.min.css')}}">
 
     {{-- Custom --}}
     <style>
@@ -2972,11 +2972,11 @@
     var hostUrl = "assets/";
     </script>
     <!--begin::Global Javascript Bundle(mandatory for all pages)-->
-    <script src="{{ asset('public/mfs/admin/assets/plugins/global/plugins.bundle.js')}}"></script>
-    <script src="{{ asset('public/mfs/admin/assets/js/scripts.bundle.js')}}"></script>
+    <script src="{{ asset('mfs/admin/assets/plugins/global/plugins.bundle.js')}}"></script>
+    <script src="{{ asset('mfs/admin/assets/js/scripts.bundle.js')}}"></script>
     <!--end::Global Javascript Bundle-->
     <!--begin::Vendors Javascript(used for this page only)-->
-    <script src="{{ asset('public/mfs/admin/assets/plugins/custom/fullcalendar/fullcalendar.bundle.js')}}"></script>
+    <script src="{{ asset('mfs/admin/assets/plugins/custom/fullcalendar/fullcalendar.bundle.js')}}"></script>
     <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>
@@ -2988,13 +2988,13 @@
     <script src="https://cdn.amcharts.com/lib/5/geodata/usaLow.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/geodata/worldTimeZonesLow.js"></script>
     <script src="https://cdn.amcharts.com/lib/5/geodata/worldTimeZoneAreasLow.js"></script>
-    <script src="{{ asset('public/mfs/admin/assets/plugins/custom/datatables/datatables.bundle.js')}}"></script>
+    <script src="{{ asset('mfs/admin/assets/plugins/custom/datatables/datatables.bundle.js')}}"></script>
     <!--end::Vendors Javascript-->
     <!--begin::Custom Javascript(used for this page only)-->
-    <script src="{{ asset('public/mfs/admin/assets/js/widgets.bundle.js')}}"></script>
-    <script src="{{ asset('public/mfs/admin/assets/js/custom/widgets.js')}}"></script>
-    <script src="{{ asset('public/mfs/admin/assets/js/custom/apps/chat/chat.js')}}"></script>
-    <script src="{{ asset('public/mfs/admin/assets/js/custom/utilities/modals/users-search.js')}}"></script>
+    <script src="{{ asset('mfs/admin/assets/js/widgets.bundle.js')}}"></script>
+    <script src="{{ asset('mfs/admin/assets/js/custom/widgets.js')}}"></script>
+    <script src="{{ asset('mfs/admin/assets/js/custom/apps/chat/chat.js')}}"></script>
+    <script src="{{ asset('mfs/admin/assets/js/custom/utilities/modals/users-search.js')}}"></script>
     <!--end::Custom Javascript-->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     {{-- <script>

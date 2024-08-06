@@ -15,7 +15,7 @@
                                     <div class="item">
                                         <div class="inner">
                                             <div class="line"></div>
-                                            <div class="title"><img src="{{ asset('public/web/images/home-overview-step1.png') }}" alt="Apply online at Mighty Finance Solution Small Business Funding - Step 1"></div>
+                                            <div class="title"><img src="{{ asset('web/images/home-overview-step1.png') }}" alt="Apply online at Mighty Finance Solution Small Business Funding - Step 1"></div>
                                             <div class="text" style="font-size: 23px; font-stretch: normal; font-style: normal; letter-spacing: normal;">
                                                 <p>Complete your <b>online application</b></p>
                                             </div>
@@ -28,7 +28,7 @@
                                     <div class="item">
                                         <div class="inner">
                                             <div class="line"></div>
-                                            <div class="title"><img src="{{ asset('public/web/images/home-overview-step2.png') }}" alt="Apply online at Mighty Finance Solution Small Business Funding - Step 2"></div>
+                                            <div class="title"><img src="{{ asset('web/images/home-overview-step2.png') }}" alt="Apply online at Mighty Finance Solution Small Business Funding - Step 2"></div>
                                             <div class="text" style="font-size: 23px; font-stretch: normal; font-style: normal; letter-spacing: normal;">
                                                 <p>Select <b>how much</b> you need</p>
                                             </div>
@@ -41,7 +41,7 @@
                                     <div class="item">
                                         <div class="inner">
                                             <div class="line"></div>
-                                            <div class="title"><img src="{{ asset('public/web/images/home-overview-step3.png') }}" alt="Apply online at Mighty Finance Solution Small Business Funding - Step 3"></div>
+                                            <div class="title"><img src="{{ asset('web/images/home-overview-step3.png') }}" alt="Apply online at Mighty Finance Solution Small Business Funding - Step 3"></div>
                                             <div class="text" style="font-size: 23px; font-stretch: normal; font-style: normal; letter-spacing: normal;">
                                                 <p>Get approved in <b>24 hours</b></p>
                                             </div>

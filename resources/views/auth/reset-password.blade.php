@@ -11,10 +11,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mighty Finance Solution | Reset Password</title>
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('public/mfs/images/logoi.png')}}" />
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('mfs/images/logoi.png')}}" />
     <!-- Custom Stylesheet -->
 
-    <link rel="stylesheet" href="{{ asset('public/mfs/css/style.css')}}" />
+    <link rel="stylesheet" href="{{ asset('mfs/css/style.css')}}" />
   </head>
 
   <body class="@@dashboard">
@@ -38,7 +38,7 @@
                 <div class="col-xl-6 col-md-6">
                     <div class="mini-logo text-center my-3">
                         <a href="{{ route('welcome') }}">
-                            <img width="100" src="{{ asset('public/web/images/logo.png')}}" alt="" />
+                            <img width="100" src="{{ asset('web/images/logo.png')}}" alt="" />
                         </a>
                         <h4 class="card-title mt-5">Change Password</h4>
                     </div>
@@ -79,8 +79,8 @@
 
 
 
-<script src="{{ asset('public/mfs/vendor/jquery/jquery.min.js')}}"></script>
-<script src="{{ asset('public/mfs/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+<script src="{{ asset('mfs/vendor/jquery/jquery.min.js')}}"></script>
+<script src="{{ asset('mfs/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 
 
 
@@ -99,7 +99,7 @@
 
 
 
-<script src="{{ asset('public/mfs/js/scripts.js')}}"></script>
+<script src="{{ asset('mfs/js/scripts.js')}}"></script>
 
 
 </body>

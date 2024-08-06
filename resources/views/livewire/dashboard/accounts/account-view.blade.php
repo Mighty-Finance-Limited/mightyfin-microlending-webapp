@@ -456,7 +456,7 @@
                                                 </td>
                                             </tr>
                                             @empty
-                                                
+
                                             @endforelse
                                         </tbody>
                                         <!--end::Table body-->
@@ -501,7 +501,7 @@
                                                 </div>
                                                 <!--end::Arrow-->
                                                 <!--begin::Logo-->
-                                                <img src="{{ asset('public/mfs/admin/assets/media/svg/card-logos/mastercard.svg')}}" class="w-40px me-3" alt="" />
+                                                <img src="{{ asset('mfs/admin/assets/media/svg/card-logos/mastercard.svg')}}" class="w-40px me-3" alt="" />
                                                 <!--end::Logo-->
                                                 <!--begin::Summary-->
                                                 {{-- <div class="me-3">
@@ -1501,9 +1501,9 @@
                                                     {{-- <td class="pe-0 text-end min-w-200px">{{ }}</td> --}}
                                                 </tr>
                                                 @empty
-                                                    
+
                                                 @endforelse
-                                                
+
                                             </tbody>
                                         </table>
                                     </div>
@@ -1536,9 +1536,9 @@
                                                     {{-- <td class="pe-0 text-end min-w-200px">{{ }}</td> --}}
                                                 </tr>
                                                 @empty
-                                                    
+
                                                 @endforelse
-                                                
+
                                             </tbody>
                                         </table>
                                     </div>
@@ -1573,9 +1573,9 @@
                                                     {{-- <td class="pe-0 text-end min-w-200px">{{ }}</td> --}}
                                                 </tr>
                                                 @empty
-                                                    
+
                                                 @endforelse
-                                                
+
                                             </tbody>
                                         </table>
                                     </div>
@@ -1694,7 +1694,7 @@
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                    
+
                                                     @forelse($data->loans as $loan)
                                                     <tr>
                                                         <td>{{ $loan->created_at->toFormattedDateString() }}</td>
@@ -1703,7 +1703,7 @@
                                                         </td>
                                                         <td> <b>{{ $loan->amount }}</b> </td>
                                                         <td class="text-danger text-xs">
-                                                            {{ 
+                                                            {{
                                                                 number_format(App\Models\Application::payback($loan->amount, $loan->repayment_plan), 2, '.', ',')
                                                             }}
                                                         </td>

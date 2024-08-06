@@ -19,10 +19,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mighty Finance Solution | App</title>
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('public/images/m.jpg') }}" />
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('images/m.jpg') }}" />
     <!-- Custom Stylesheet -->
 
-    <link rel="stylesheet" href="{{ asset('public/mfs/css/style.css') }}" />
+    <link rel="stylesheet" href="{{ asset('mfs/css/style.css') }}" />
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     {{-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"> --}}
     <link rel="stylesheet" href="https://unpkg.com/intro.js/introjs.css">
@@ -164,12 +164,12 @@
 
     <div @if (request()->routeIs('dashboard')) style="margin-top:0px" @endif id="main-wrapper">
 
-       
+
        @include('livewire.dashboard.__parts.header_content')
         <div class="sidebar" style="background-image: linear-gradient(to right, #792db8, #792db8); color:#fff;">
             <div class="brand-logo">
                 <a href="{{ route('dashboard') }}" style="margin:4%;">
-                    <img src="{{ asset('public/web/images/01-ft-logo.png') }}" alt="" width="80" />
+                    <img src="{{ asset('web/images/01-ft-logo.png') }}" alt="" width="80" />
                 </a>
             </div>
             <div class="menu">
@@ -238,20 +238,20 @@
     @stack('modals')
 
     @livewireScripts
-    <script src="{{ asset('public/mfs/vendor/jquery/jquery.min.js') }}"></script>
-    <script src="{{ asset('public/mfs/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('mfs/vendor/jquery/jquery.min.js') }}"></script>
+    <script src="{{ asset('mfs/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 
-    <script src="{{ asset('public/mfs/vendor/apexchart/apexcharts.min.js') }}"></script>
-    <script src="{{ asset('public/mfs/js/plugins/apex-price.js') }}"></script>
+    <script src="{{ asset('mfs/vendor/apexchart/apexcharts.min.js') }}"></script>
+    <script src="{{ asset('mfs/js/plugins/apex-price.js') }}"></script>
 
-    <script src="{{ asset('public/mfs/vendor/basic-table/jquery.basictable.min.js') }}"></script>
-    <script src="{{ asset('public/mfs/js/plugins/basic-table-init.js') }}"></script>
+    <script src="{{ asset('mfs/vendor/basic-table/jquery.basictable.min.js') }}"></script>
+    <script src="{{ asset('mfs/js/plugins/basic-table-init.js') }}"></script>
 
-    <script src="{{ asset('public/mfs/vendor/perfect-scrollbar/perfect-scrollbar.min.js') }}"></script>
-    <script src="{{ asset('public/mfs/js/plugins/perfect-scrollbar-init.js') }}"></script>
+    <script src="{{ asset('mfs/vendor/perfect-scrollbar/perfect-scrollbar.min.js') }}"></script>
+    <script src="{{ asset('mfs/js/plugins/perfect-scrollbar-init.js') }}"></script>
 
-    <script src="{{ asset('public/mfs/js/dashboard.js') }}"></script>
-    <script src="{{ asset('public/mfs/js/scripts.js') }}"></script>
+    <script src="{{ asset('mfs/js/dashboard.js') }}"></script>
+    <script src="{{ asset('mfs/js/scripts.js') }}"></script>
 
     {{-- Third party --}}
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>

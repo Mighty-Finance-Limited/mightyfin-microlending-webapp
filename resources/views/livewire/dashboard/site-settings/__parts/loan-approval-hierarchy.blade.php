@@ -31,9 +31,9 @@
                     </div>
                 </div>
             </div>
-    
+
             <div class="separator separator-dashed my-3"></div>
-    
+
             <div id="spooling" class="settings mb-0">
                 <label class="col-lg-4 col-form-label fw-bold fw-semibold fs-6">Spooling Settings</label>
 
@@ -69,11 +69,11 @@
                 </div>
             </div>
         </div>
-    
+
         <div class="card-footer d-flex justify-content-end py-6 px-9">
-            <div id="loading-spinner" class="mx-auto"> 
+            <div id="loading-spinner" class="mx-auto">
                 <div class="flex justify-content-center justify-items-center items-center">
-                    <img width="100" src="{{ asset('public/loader/1.gif') }}" alt="">
+                    <img width="100" src="{{ asset('loader/1.gif') }}" alt="">
                     <span>Setting...</span>
                 </div>
             </div>
@@ -83,8 +83,8 @@
             </div>
         </div>
 </form>
-    
-</div>  
+
+</div>
 
 <script>
     // Initialize AOS
@@ -166,7 +166,7 @@
 
                     // Hide the loading spinner
                     document.getElementById("loading-spinner").style.display = 'none';
-                    
+
                     jSuites.notification({
                         name: 'Setting Successful',
                         message: 'Loan approval process update',

@@ -7,9 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mighty Finance Solution | Reset Password</title>
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('public/web/images/favicon.png') }}" />
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('web/images/favicon.png') }}" />
     <!-- Custom Stylesheet -->
-    <link href="{{ asset('public/theme/css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('theme/css/style.css') }}" rel="stylesheet">
     <style>
         body {
             margin: 0;
@@ -111,9 +111,9 @@
         </div>
     </div>
 
-    <script src="{{ asset('public/mfs/vendor/jquery/jquery.min.js') }}"></script>
-    <script src="{{ asset('public/mfs/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ asset('public/mfs/js/scripts.js') }}"></script>
+    <script src="{{ asset('mfs/vendor/jquery/jquery.min.js') }}"></script>
+    <script src="{{ asset('mfs/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('mfs/js/scripts.js') }}"></script>
 </body>
 
 </html>

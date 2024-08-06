@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Application extends Model
+class ApplicationOld extends Model
 {
     use HasFactory;
 
@@ -21,7 +21,7 @@ class Application extends Model
         'amount',
         'interest',
         'payback_amount',
-        
+
         'glname',
         'gfname',
         'gemail',
@@ -53,7 +53,7 @@ class Application extends Model
 
         'processed_by',
         'approved_by',
-        
+
         'complete',
         'doa',
 
@@ -61,7 +61,7 @@ class Application extends Model
         'maximum_deductable',
         'net_pay_blr', //net before loan recovery
         'net_pay_alr', //net pay after loan recovery
-        'service_cost' 
+        'service_cost'
 
     ];
     protected $appends = [
@@ -111,8 +111,8 @@ class Application extends Model
     //     // 2 to 6 months
     //     if( $duration > 1 && $duration < 7 ){
     //         return ($principal * 0.44) + $principal;
-    //     } 
-        
+    //     }
+
     //     // 3 months and above
     //     // if( $duration > 3){
     //     //     return ($principal * 1.44) + $principal;
@@ -130,63 +130,63 @@ class Application extends Model
         if( $duration == 2 ){
             $number = (($principal * 1.2) / ($duration * 1.1)) + $principal;
             return number_format($number, 2, '.', '');
-        } 
-        
-        // 3 months 
+        }
+
+        // 3 months
         if( $duration == 3){
             $number = (($principal * 1.2) / ($duration * 1.15)) + $principal;
             return number_format($number, 2, '.', '');
         }
-        
-        // 4 months 
+
+        // 4 months
         if( $duration == 4){
             $number = (($principal * 1.2) / ($duration * 1.2)) + $principal;
             return number_format($number, 2, '.', '');
         }
-        
-        // 5 months 
+
+        // 5 months
         if( $duration == 5){
             $number = (($principal * 1.2) / ($duration * 1.25)) + $principal;
             return number_format($number, 2, '.', '');
         }
-        
-        // 5 months 
+
+        // 5 months
         if( $duration == 6){
             $number = (($principal * 1.2) / ($duration * 1.3)) + $principal;
             return number_format($number, 2, '.', '');
         }
-        
-        // 5 months 
+
+        // 5 months
         if( $duration == 7){
             $number = (($principal * 1.2) / ($duration * 1.35)) + $principal;
             return number_format($number, 2, '.', '');
         }
-        
-        // 5 months 
+
+        // 5 months
         if( $duration == 8){
             $number = (($principal * 1.2) / ($duration * 1.4)) + $principal;
             return number_format($number, 2, '.', '');
         }
-        
-        // 5 months 
+
+        // 5 months
         if( $duration == 9){
             $number = (($principal * 1.2) / ($duration * 1.45)) + $principal;
             return number_format($number, 2, '.', '');
         }
-        
-        // 5 months 
+
+        // 5 months
         if( $duration == 10){
             $number = (($principal * 1.2) / ($duration * 1.5)) + $principal;
             return number_format($number, 2, '.', '');
         }
-        
-        // 5 months 
+
+        // 5 months
         if( $duration == 11){
             $number = (($principal * 1.2) / (12 * 1.55)) + $principal;
             return number_format($number, 2, '.', '');
         }
-        
-        // 5 months 
+
+        // 5 months
         if( $duration == 12){
             $number = (($principal * 1.2) / ($duration * 1.6)) + $principal;
             return number_format($number, 2, '.', '');
@@ -204,63 +204,63 @@ class Application extends Model
         if( $duration == 2 ){
             $number = ($principal * 1.2) / ($duration * 1.1);
             return number_format($number, 2, '.', '');
-        } 
-        
-        // 3 months 
+        }
+
+        // 3 months
         if( $duration == 3){
             $number = ($principal * 1.2) / ($duration * 1.15);
             return number_format($number, 2, '.', '');
         }
-        
-        // 4 months 
+
+        // 4 months
         if( $duration == 4){
             $number = ($principal * 1.2) / ($duration * 1.2);
             return number_format($number, 2, '.', '');
         }
-        
-        // 5 months 
+
+        // 5 months
         if( $duration == 5){
             $number = ($principal * 1.2) / ($duration * 1.25);
             return number_format($number, 2, '.', '');
         }
-        
-        // 5 months 
+
+        // 5 months
         if( $duration == 6){
             $number = ($principal * 1.2) / ($duration * 1.3);
             return number_format($number, 2, '.', '');
         }
-        
-        // 5 months 
+
+        // 5 months
         if( $duration == 7){
             $number =( $principal) * 1.2 / ($duration * 1.35);
             return number_format($number, 2, '.', '');
         }
-        
-        // 5 months 
+
+        // 5 months
         if( $duration == 8){
             $number =( $principal * 1.2) / ($duration * 1.4);
             return number_format($number, 2, '.', '');
         }
-        
-        // 5 months 
+
+        // 5 months
         if( $duration == 9){
             $number = ($principal * 1.2) / ($duration * 1.45);
             return number_format($number, 2, '.', '');
         }
-        
-        // 5 months 
+
+        // 5 months
         if( $duration == 10){
             $number = ($principal * 1.2) / ($duration * 1.5);
             return number_format($number, 2, '.', '');
         }
-        
-        // 5 months 
+
+        // 5 months
         if( $duration == 11){
             $number = ($principal * 1.2) / (12 * 1.55);
             return number_format($number, 2, '.', '');
         }
-        
-        // 5 months 
+
+        // 5 months
         if( $duration == 12){
             $number = ($principal * 1.2) / ($duration * 1.6);
             return number_format($number, 2, '.', '');
@@ -277,8 +277,8 @@ class Application extends Model
     //     // 2 to 6 months
     //     if( $duration > 1 && $duration < 7 ){
     //         return ($principal * 0.44);
-    //     } 
-        
+    //     }
+
     //     // // 3 months and above
     //     // if( $duration > 3){
     //     //     return ($principal * 1.44);
@@ -293,7 +293,7 @@ class Application extends Model
             return 0.2;
         }
     }
-    
+
 
     public static function monthly_installment($amount, $duration){
         $total_collectable = Application::payback($amount, $duration);
@@ -318,7 +318,7 @@ class Application extends Model
         return Application::where('complete', 1)->sum('amount');
     }
     public static function totalAmountLoanedOut(){
-        //  Total amount for complete and approved loans 
+        //  Total amount for complete and approved loans
         return Application::where('complete', 1)->where('status', 1)->whereNotNull('due_date')->sum('amount');
     }
     public static function totalAmountPending(){
@@ -338,7 +338,7 @@ class Application extends Model
         $monthly_payment = Application::monthly_installment($loan->amount, $loan->repayment_plan); // Clear
         $maximum_deductable_amount = $net_pay * 0.75; // Clear
         $net_pay_alr = $net_pay * 0.25;; //Net Pay After Loan Recovery //Clear
-        
+
         // if($maximum_deductable_amount > 0){
             $credit_score = $monthly_payment < $maximum_deductable_amount;
         // }else{

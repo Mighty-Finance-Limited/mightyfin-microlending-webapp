@@ -1,4 +1,4 @@
-<div class="page-header" style="background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), rgba(0, 0, 0, 0.2) url('{{ asset("public/web/images/1images-page-header.jpg") }}') no-repeat center;">
+<div class="page-header" style="background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), rgba(0, 0, 0, 0.2) url('{{ asset("web/images/1images-page-header.jpg") }}') no-repeat center;">
     <div class="container">
         <div class="row">
             <div class="col-md-12 ">
@@ -27,7 +27,7 @@
                         </div>
                     </div>
                 </div>
-               
+
             </div>
         </div>
     </div>
@@ -82,13 +82,13 @@ Innovate. Respond. Deliver</p>
                                 <div class="owl-wrapper" style="width: 100%; left: 0px; display: block; transition: all 1000ms ease 0s; transform: translate3d(0px, 0px, 0px);">
                                     <div class="owl-item active" style="width: 100%;">
                                         <div class="student-slider-img">
-                                            <img src="{{ asset('public/web/images/mfsvision.jpg') }}" class="img-fluid" alt="">
+                                            <img src="{{ asset('web/images/mfsvision.jpg') }}" class="img-fluid" alt="">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <!--End Mission/Vision statement image -->                                      
+                        <!--End Mission/Vision statement image -->
                     </div>
                 </div>
             </div>
@@ -236,7 +236,7 @@ Innovate. Respond. Deliver</p>
                                                 <p></p>
                                             </div>
                                             <div class="testimonial-autor-box">
-                                                <div class="testimonial-img pull-left"> <img src="{{ asset('public/web/images/12-testimonial-img-3.jpg') }}" alt=""></div>
+                                                <div class="testimonial-img pull-left"> <img src="{{ asset('web/images/12-testimonial-img-3.jpg') }}" alt=""></div>
                                                 <div class="testimonial-autor pull-left">
                                                     <h4 class="testimonial-name">Mulenga G. Kulenga</h4> <span class="testimonial-meta text-default">Inventory loan</span>
                                                 </div>
@@ -255,7 +255,7 @@ Innovate. Respond. Deliver</p>
                                                 <p></p>
                                             </div>
                                             <div class="testimonial-autor-box">
-                                                <div class="testimonial-img pull-left"> <img src="{{ asset('public/web/images/12-testimonial-img-3.jpg') }}" alt=""></div>
+                                                <div class="testimonial-img pull-left"> <img src="{{ asset('web/images/12-testimonial-img-3.jpg') }}" alt=""></div>
                                                 <div class="testimonial-autor pull-left">
                                                     <h4 class="testimonial-name">Mary Andala</h4> <span class="testimonial-meta text-default">Equipment Loan</span>
                                                 </div>
@@ -330,4 +330,4 @@ Innovate. Respond. Deliver</p>
             </div>
         </div>
     </div>
-</section> 
+</section>

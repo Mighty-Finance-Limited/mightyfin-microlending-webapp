@@ -62,7 +62,7 @@
                                 <div class="menu-content d-flex align-items-center px-3">
                                     <!--begin::Avatar-->
                                     <div class="symbol symbol-50px me-5">
-                                        <img alt="Logo" src="{{ asset('public/mfs/admin/assets/media/avatars/blank.png')}}" />
+                                        <img alt="Logo" src="{{ asset('mfs/admin/assets/media/avatars/blank.png')}}" />
                                     </div>
                                     <!--end::Avatar-->
                                     <!--begin::Username-->
@@ -241,7 +241,7 @@
                                 <a href="#" class="d-flex text-dark text-hover-primary align-items-center mb-5">
                                     <!--begin::Symbol-->
                                     <div class="symbol symbol-40px me-4">
-                                        <img src="{{ asset('public/mfs/admin/assets/media/avatars/300-6.jpg')}}" alt="" />
+                                        <img src="{{ asset('mfs/admin/assets/media/avatars/300-6.jpg')}}" alt="" />
                                     </div>
                                     <!--end::Symbol-->
                                     <!--begin::Title-->
@@ -256,7 +256,7 @@
                                 <a href="#" class="d-flex text-dark text-hover-primary align-items-center mb-5">
                                     <!--begin::Symbol-->
                                     <div class="symbol symbol-40px me-4">
-                                        <img src="{{ asset('public/mfs/admin/assets/media/avatars/300-2.jpg')}}" alt="" />
+                                        <img src="{{ asset('mfs/admin/assets/media/avatars/300-2.jpg')}}" alt="" />
                                     </div>
                                     <!--end::Symbol-->
                                     <!--begin::Title-->
@@ -271,7 +271,7 @@
                                 <a href="#" class="d-flex text-dark text-hover-primary align-items-center mb-5">
                                     <!--begin::Symbol-->
                                     <div class="symbol symbol-40px me-4">
-                                        <img src="{{ asset('public/mfs/admin/assets/media/avatars/300-9.jpg')}}" alt="" />
+                                        <img src="{{ asset('mfs/admin/assets/media/avatars/300-9.jpg')}}" alt="" />
                                     </div>
                                     <!--end::Symbol-->
                                     <!--begin::Title-->
@@ -286,7 +286,7 @@
                                 <a href="#" class="d-flex text-dark text-hover-primary align-items-center mb-5">
                                     <!--begin::Symbol-->
                                     <div class="symbol symbol-40px me-4">
-                                        <img src="{{ asset('public/mfs/admin/assets/media/avatars/300-14.jpg')}}" alt="" />
+                                        <img src="{{ asset('mfs/admin/assets/media/avatars/300-14.jpg')}}" alt="" />
                                     </div>
                                     <!--end::Symbol-->
                                     <!--begin::Title-->
@@ -301,7 +301,7 @@
                                 <a href="#" class="d-flex text-dark text-hover-primary align-items-center mb-5">
                                     <!--begin::Symbol-->
                                     <div class="symbol symbol-40px me-4">
-                                        <img src="{{ asset('public/mfs/admin/assets/media/avatars/300-11.jpg')}}" alt="" />
+                                        <img src="{{ asset('mfs/admin/assets/media/avatars/300-11.jpg')}}" alt="" />
                                     </div>
                                     <!--end::Symbol-->
                                     <!--begin::Title-->
@@ -322,7 +322,7 @@
                                     <!--begin::Symbol-->
                                     <div class="symbol symbol-40px me-4">
                                         <span class="symbol-label bg-light">
-                                            <img class="w-20px h-20px" src="{{ asset('public/mfs/admin/assets/media/svg/brand-logos/volicity-9.svg')}}"
+                                            <img class="w-20px h-20px" src="{{ asset('mfs/admin/assets/media/svg/brand-logos/volicity-9.svg')}}"
                                                 alt="" />
                                         </span>
                                     </div>
@@ -340,7 +340,7 @@
                                     <!--begin::Symbol-->
                                     <div class="symbol symbol-40px me-4">
                                         <span class="symbol-label bg-light">
-                                            <img class="w-20px h-20px" src="{{ asset('public/mfs/admin/assets/media/svg/brand-logos/tvit.svg')}}"
+                                            <img class="w-20px h-20px" src="{{ asset('mfs/admin/assets/media/svg/brand-logos/tvit.svg')}}"
                                                 alt="" />
                                         </span>
                                     </div>
@@ -358,7 +358,7 @@
                                     <!--begin::Symbol-->
                                     <div class="symbol symbol-40px me-4">
                                         <span class="symbol-label bg-light">
-                                            <img class="w-20px h-20px" src="{{ asset('public/mfs/admin/assets/media/svg/misc/infography.svg')}}"
+                                            <img class="w-20px h-20px" src="{{ asset('mfs/admin/assets/media/svg/misc/infography.svg')}}"
                                                 alt="" />
                                         </span>
                                     </div>
@@ -376,7 +376,7 @@
                                     <!--begin::Symbol-->
                                     <div class="symbol symbol-40px me-4">
                                         <span class="symbol-label bg-light">
-                                            <img class="w-20px h-20px" src="{{ asset('public/mfs/admin/assets/media/svg/brand-logos/leaf.svg')}}"
+                                            <img class="w-20px h-20px" src="{{ asset('mfs/admin/assets/media/svg/brand-logos/leaf.svg')}}"
                                                 alt="" />
                                         </span>
                                     </div>
@@ -394,7 +394,7 @@
                                     <!--begin::Symbol-->
                                     <div class="symbol symbol-40px me-4">
                                         <span class="symbol-label bg-light">
-                                            <img class="w-20px h-20px" src="{{ asset('public/mfs/admin/assets/media/svg/brand-logos/tower.svg')}}"
+                                            <img class="w-20px h-20px" src="{{ asset('mfs/admin/assets/media/svg/brand-logos/tower.svg')}}"
                                                 alt="" />
                                         </span>
                                     </div>
@@ -999,14 +999,14 @@
                         </div>
                         <!--end:Menu item-->
                         <!--begin:Menu item-->
-                       
+
                         <!--end:Menu item-->
                     </div>
                     <!--end:Menu sub-->
                 </div>
                 <!--end:Menu item-->
                 <!--begin:Menu item-->
-                
+
                 @can('view loans')
                 <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
                     <!--begin:Menu link-->
@@ -1023,21 +1023,21 @@
                         <span class="menu-title">Loans</span>
                         <span class="menu-arrow"></span>
                     </span>
-                    
+
                     <div class="menu-sub menu-sub-accordion">
-                        
+
                         @can('accept and reject loan requests')
                         <div class="menu-item">
                             <a class="menu-link" href="{{ route('proxy-loan-create') }}">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
-                                
+
                                 <span class="menu-title">Create Loan</span>
                             </a>
                         </div>
                         @endcan
-                        
+
                         <div class="menu-item">
                             <a class="menu-link" href="{{ route('view-loan-requests') }}">
                                 <span class="menu-bullet">
@@ -1083,7 +1083,7 @@
                     <!--begin:Menu sub-->
                     <div class="menu-sub menu-sub-accordion">
                         <!--begin:Menu item-->
-                       
+
                         <!--end:Menu item-->
                         <!--begin:Menu item-->
                         <div class="menu-item">
@@ -1120,7 +1120,7 @@
                             </a>
                             <!--end:Menu link-->
                         </div>
-                        
+
                     </div>
                     <!--end:Menu sub-->
                 </div>
@@ -2105,7 +2105,7 @@
                 </div>
                 <!--end:Menu item-->
                 <!--begin:Menu item-->
-              
+
                 <!--end:Menu item-->
                 <!--begin:Menu item-->
                 <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
@@ -2134,7 +2134,7 @@
                             </a>
                             <!--end:Menu link-->
                             <!--begin:Menu sub-->
-                            
+
                             <!--end:Menu sub-->
                         </div>
                         <div data-kt-menu-trigger="click" class="menu-item menu-accordion mb-1">
@@ -2147,7 +2147,7 @@
                             </span>
                             <!--end:Menu link-->
                             <!--begin:Menu sub-->
-                            
+
                             <!--end:Menu sub-->
                         </div>
                         <!--end:Menu item-->
@@ -2178,7 +2178,7 @@
                     </div>
                     <!--end:Menu sub-->
                 </div>
-                
+
                 <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
                     <!--begin:Menu link-->
                     <span class="menu-link">
@@ -2205,7 +2205,7 @@
                             </span>
                             <!--end:Menu link-->
                             <!--begin:Menu sub-->
-                            
+
                             <!--end:Menu sub-->
                         </div>
                         <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
@@ -2218,7 +2218,7 @@
                             </span>
                             <!--end:Menu link-->
                             <!--begin:Menu sub-->
-                            
+
                             <!--end:Menu sub-->
                         </div>
                         <!--end:Menu item-->
@@ -2252,7 +2252,7 @@
                             </span>
                             <!--end:Menu link-->
                             <!--begin:Menu sub-->
-                            
+
                             <!--end:Menu sub-->
                         </div>
                         <!--end:Menu item-->
@@ -2334,7 +2334,7 @@
                             </a>
                             <!--end:Menu link-->
                             <!--begin:Menu sub-->
-                            
+
                             <!--end:Menu sub-->
                         </div>
                         <!--end:Menu item-->
@@ -2345,7 +2345,7 @@
                 </div>
                 <!--end:Menu item-->
                 <!--begin:Menu item-->
-               
+
                 <!--end:Menu item-->
                 <!--begin:Menu item-->
                 <div class="menu-item">
@@ -2376,7 +2376,7 @@
                     </a>
                     <!--end:Menu link-->
                 </div>
-                
+
             </div>
             <!--end::Menu-->
         </div>

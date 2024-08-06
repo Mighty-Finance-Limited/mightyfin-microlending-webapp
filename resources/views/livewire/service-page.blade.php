@@ -107,12 +107,12 @@
                                             <a href="#"
                                                 class="imghover hover-lazy-felix">
                                                 <img fetchpriority="high" decoding="async" width="358" height="250"
-                                                    src="{{ asset('public/web/images/service-1.webp') }}"
+                                                    src="{{ asset('web/images/service-1.webp') }}"
                                                     class="img-responsive wp-post-image" alt=""
-                                                    srcset="{{ asset('public/web/images/service-1.webp') }} 300w"
+                                                    srcset="{{ asset('web/images/service-1.webp') }} 300w"
                                                     sizes="(max-width: 358px) 100vw, 358px"> <button
                                                     class="lazy-felix lazy-felix-download-btn"
-                                                    data-img-link="{{ asset('public/web/images/service-1.webp') }}"><svg
+                                                    data-img-link="{{ asset('web/images/service-1.webp') }}"><svg
                                                         xmlns="http://www.w3.org/2000/svg" class="lazyfelix-icon"
                                                         width="27" height="25" viewBox="0 0 27 25"
                                                         fill="none">
@@ -136,7 +136,7 @@
                                         <div class="service-content bg-white pinside30">
                                             <div class="icon mb10">
 
-                                                <img style="max-width: 3rem" src="{{ asset('public/web/images/refinancing.svg') }}"
+                                                <img style="max-width: 3rem" src="{{ asset('web/images/refinancing.svg') }}"
                                                     class="icon-svg-2x" alt="">
 
 
@@ -157,12 +157,12 @@
                                                 class="imghover hover-lazy-felix">
                                                 <img fetchpriority="high" decoding="async" width="358"
                                                     height="250"
-                                                    src="{{ asset('public/web/images/service-2.webp') }}"
+                                                    src="{{ asset('web/images/service-2.webp') }}"
                                                     class="img-responsive wp-post-image" alt=""
-                                                    srcset="{{ asset('public/web/images/service-2.webp') }} 358w, {{ asset('public/web/images/service-2.webp') }} 300w"
+                                                    srcset="{{ asset('web/images/service-2.webp') }} 358w, {{ asset('web/images/service-2.webp') }} 300w"
                                                     sizes="(max-width: 358px) 100vw, 358px"> <button
                                                     class="lazy-felix lazy-felix-download-btn"
-                                                    data-img-link="{{ asset('public/web/images/service-2.webp') }}"><svg
+                                                    data-img-link="{{ asset('web/images/service-2.webp') }}"><svg
                                                         xmlns="http://www.w3.org/2000/svg" class="lazyfelix-icon"
                                                         width="27" height="25" viewBox="0 0 27 25"
                                                         fill="none">
@@ -187,7 +187,7 @@
                                         <div class="service-content bg-white pinside30">
                                             <div class="icon mb10">
 
-                                                <img style="max-width: 3rem" src="{{ asset('public/web/images/refinancing.svg') }}"
+                                                <img style="max-width: 3rem" src="{{ asset('web/images/refinancing.svg') }}"
                                                     class="icon-svg-2x" alt="">
 
 
@@ -208,12 +208,12 @@
                                                 class="imghover hover-lazy-felix">
                                                 <img fetchpriority="high" decoding="async" width="358"
                                                     height="250"
-                                                    src="{{ asset('public/web/images/service-3.webp') }}"
+                                                    src="{{ asset('web/images/service-3.webp') }}"
                                                     class="img-responsive wp-post-image" alt=""
-                                                    srcset="{{ asset('public/web/images/service-3.webp') }} 358w, {{ asset('public/web/images/service-3.webp') }} 300w"
+                                                    srcset="{{ asset('web/images/service-3.webp') }} 358w, {{ asset('web/images/service-3.webp') }} 300w"
                                                     sizes="(max-width: 358px) 100vw, 358px"> <button
                                                     class="lazy-felix lazy-felix-download-btn"
-                                                    data-img-link="{{ asset('public/web/images/service-3.webp') }}"><svg
+                                                    data-img-link="{{ asset('web/images/service-3.webp') }}"><svg
                                                         xmlns="http://www.w3.org/2000/svg" class="lazyfelix-icon"
                                                         width="27" height="25" viewBox="0 0 27 25"
                                                         fill="none">
@@ -238,7 +238,7 @@
                                         <div class="service-content bg-white pinside30">
                                             <div class="icon mb10">
 
-                                                <img style="max-width: 3rem" src="{{ asset('public/web/images/refinancing.svg') }}"
+                                                <img style="max-width: 3rem" src="{{ asset('web/images/refinancing.svg') }}"
                                                     class="icon-svg-2x" alt="">
 
 

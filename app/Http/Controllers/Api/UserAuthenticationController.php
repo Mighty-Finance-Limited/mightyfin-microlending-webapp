@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\API;
+namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Mail\BTFAccount;
@@ -59,15 +59,15 @@ class UserAuthenticationController extends Controller
                 'email' => 'required|email',
                 'password' => 'required'
             ]);
-    
+
             $remember = true;
             if (Auth::attempt($credentials, $remember)) {
                 // $request->session()->regenerate();
                 $user = Auth::user();
                 $rememberToken = $remember ? $user->getRememberToken() : null;
                 return response()->json([
-                    'message' => 'Successful.', 
-                    'user' => $user, 
+                    'message' => 'Successful.',
+                    'user' => $user,
                     'remember_me_token' => $rememberToken
                 ]);
             }else{

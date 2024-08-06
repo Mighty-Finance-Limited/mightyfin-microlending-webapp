@@ -4,7 +4,7 @@
         if (isset($_GET['view'])) {
             // Retrieve the value of the 'view' parameter
             $param = $_GET['view'];
-        
+
             // Use the $view variable as needed
             $view = htmlspecialchars($param);
         }
@@ -40,7 +40,7 @@
                                 @default
                                     <h4>Payments</h4>
                                 @break
-                                    
+
                             @endswitch
                         </div>
 
@@ -67,7 +67,7 @@
                             <div id="browserSession" class="">
                                 @include('livewire.dashboard.__parts.withdrawals')
                             </div>
-        
+
                             <div id="docUploads" class="">
                                 @include('livewire.dashboard.__parts.investments')
                             </div>
@@ -158,8 +158,8 @@
                 document.getElementById('transfers').style.display = "block";
             }
         </script>
-        <script src="{{ asset('public/mfs/vendor/jquery/jquery.min.js')}}"></script>
-        <script src="{{ asset('public/mfs/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+        <script src="{{ asset('mfs/vendor/jquery/jquery.min.js')}}"></script>
+        <script src="{{ asset('mfs/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
     </div>
 </div>
-    
+

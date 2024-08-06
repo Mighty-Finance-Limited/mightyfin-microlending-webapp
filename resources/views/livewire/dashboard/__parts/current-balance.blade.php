@@ -176,7 +176,7 @@
                             </div>
                             <div class="col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6">
                                 <div class="pt-6">
-                                    <img class="balance" src="{{ asset('public/images/mfs.png') }}" alt="">
+                                    <img class="balance" src="{{ asset('images/mfs.png') }}" alt="">
                                 </div>
                             </div>
                             <style>

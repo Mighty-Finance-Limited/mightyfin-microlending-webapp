@@ -62,7 +62,7 @@
                                 <div class="menu-content d-flex align-items-center px-3">
                                     <!--begin::Avatar-->
                                     <div class="symbol symbol-50px me-5">
-                                        <img alt="Logo" src="{{ asset('public/mfs/admin/assets/media/avatars/blank.png')}}" />
+                                        <img alt="Logo" src="{{ asset('mfs/admin/assets/media/avatars/blank.png')}}" />
                                     </div>
                                     <!--end::Avatar-->
                                     <!--begin::Username-->
@@ -158,14 +158,14 @@
                             </div> --}}
                             <!--end::Menu item-->
                             <!--begin::Menu item-->
-                            
+
                             <form method="POST" action="{{ route('logout') }}" class="menu-item px-5">
                                 @csrf
                                 <button type="submit" class="menu-link px-5 btn">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-in-left" viewBox="0 0 16 16">
                                         <path fill-rule="evenodd" d="M10 3.5a.5.5 0 0 0-.5-.5h-8a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 .5-.5v-2a.5.5 0 0 1 1 0v2A1.5 1.5 0 0 1 9.5 14h-8A1.5 1.5 0 0 1 0 12.5v-9A1.5 1.5 0 0 1 1.5 2h8A1.5 1.5 0 0 1 11 3.5v2a.5.5 0 0 1-1 0z"/>
                                         <path fill-rule="evenodd" d="M4.146 8.354a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H14.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708z"/>
-                                    </svg>                                    
+                                    </svg>
                                     <span class="ms-2">Sign Out </span>
                                 </button>
                             </form>
@@ -211,7 +211,7 @@
                     </i>
                     <!--end::Icon-->
                     <!--begin::Input-->
-                    <input type="text" class="search-input form-control ps-13 fs-7 h-40px" name="search" 
+                    <input type="text" class="search-input form-control ps-13 fs-7 h-40px" name="search"
                         placeholder="Quick Search" value="Search" data-kt-search-element="input" />
                     <!--end::Input-->
                     <!--begin::Spinner-->
@@ -248,7 +248,7 @@
                                 <a href="#" class="d-flex text-dark text-hover-primary align-items-center mb-5">
                                     <!--begin::Symbol-->
                                     <div class="symbol symbol-40px me-4">
-                                        <img src="{{ asset('public/mfs/admin/assets/media/avatars/300-6.jpg')}}" alt="" />
+                                        <img src="{{ asset('mfs/admin/assets/media/avatars/300-6.jpg')}}" alt="" />
                                     </div>
                                     <!--end::Symbol-->
                                     <!--begin::Title-->
@@ -263,7 +263,7 @@
                                 <a href="#" class="d-flex text-dark text-hover-primary align-items-center mb-5">
                                     <!--begin::Symbol-->
                                     <div class="symbol symbol-40px me-4">
-                                        <img src="{{ asset('public/mfs/admin/assets/media/avatars/300-2.jpg')}}" alt="" />
+                                        <img src="{{ asset('mfs/admin/assets/media/avatars/300-2.jpg')}}" alt="" />
                                     </div>
                                     <!--end::Symbol-->
                                     <!--begin::Title-->
@@ -278,7 +278,7 @@
                                 <a href="#" class="d-flex text-dark text-hover-primary align-items-center mb-5">
                                     <!--begin::Symbol-->
                                     <div class="symbol symbol-40px me-4">
-                                        <img src="{{ asset('public/mfs/admin/assets/media/avatars/300-9.jpg')}}" alt="" />
+                                        <img src="{{ asset('mfs/admin/assets/media/avatars/300-9.jpg')}}" alt="" />
                                     </div>
                                     <!--end::Symbol-->
                                     <!--begin::Title-->
@@ -293,7 +293,7 @@
                                 <a href="#" class="d-flex text-dark text-hover-primary align-items-center mb-5">
                                     <!--begin::Symbol-->
                                     <div class="symbol symbol-40px me-4">
-                                        <img src="{{ asset('public/mfs/admin/assets/media/avatars/300-14.jpg')}}" alt="" />
+                                        <img src="{{ asset('mfs/admin/assets/media/avatars/300-14.jpg')}}" alt="" />
                                     </div>
                                     <!--end::Symbol-->
                                     <!--begin::Title-->
@@ -308,7 +308,7 @@
                                 <a href="#" class="d-flex text-dark text-hover-primary align-items-center mb-5">
                                     <!--begin::Symbol-->
                                     <div class="symbol symbol-40px me-4">
-                                        <img src="{{ asset('public/mfs/admin/assets/media/avatars/300-11.jpg')}}" alt="" />
+                                        <img src="{{ asset('mfs/admin/assets/media/avatars/300-11.jpg')}}" alt="" />
                                     </div>
                                     <!--end::Symbol-->
                                     <!--begin::Title-->
@@ -329,7 +329,7 @@
                                     <!--begin::Symbol-->
                                     <div class="symbol symbol-40px me-4">
                                         <span class="symbol-label bg-light">
-                                            <img class="w-20px h-20px" src="{{ asset('public/mfs/admin/assets/media/svg/brand-logos/volicity-9.svg')}}"
+                                            <img class="w-20px h-20px" src="{{ asset('mfs/admin/assets/media/svg/brand-logos/volicity-9.svg')}}"
                                                 alt="" />
                                         </span>
                                     </div>
@@ -347,7 +347,7 @@
                                     <!--begin::Symbol-->
                                     <div class="symbol symbol-40px me-4">
                                         <span class="symbol-label bg-light">
-                                            <img class="w-20px h-20px" src="{{ asset('public/mfs/admin/assets/media/svg/brand-logos/tvit.svg')}}"
+                                            <img class="w-20px h-20px" src="{{ asset('mfs/admin/assets/media/svg/brand-logos/tvit.svg')}}"
                                                 alt="" />
                                         </span>
                                     </div>
@@ -365,7 +365,7 @@
                                     <!--begin::Symbol-->
                                     <div class="symbol symbol-40px me-4">
                                         <span class="symbol-label bg-light">
-                                            <img class="w-20px h-20px" src="{{ asset('public/mfs/admin/assets/media/svg/misc/infography.svg')}}"
+                                            <img class="w-20px h-20px" src="{{ asset('mfs/admin/assets/media/svg/misc/infography.svg')}}"
                                                 alt="" />
                                         </span>
                                     </div>
@@ -383,7 +383,7 @@
                                     <!--begin::Symbol-->
                                     <div class="symbol symbol-40px me-4">
                                         <span class="symbol-label bg-light">
-                                            <img class="w-20px h-20px" src="{{ asset('public/mfs/admin/assets/media/svg/brand-logos/leaf.svg')}}"
+                                            <img class="w-20px h-20px" src="{{ asset('mfs/admin/assets/media/svg/brand-logos/leaf.svg')}}"
                                                 alt="" />
                                         </span>
                                     </div>
@@ -401,7 +401,7 @@
                                     <!--begin::Symbol-->
                                     <div class="symbol symbol-40px me-4">
                                         <span class="symbol-label bg-light">
-                                            <img class="w-20px h-20px" src="{{ asset('public/mfs/admin/assets/media/svg/brand-logos/tower.svg')}}"
+                                            <img class="w-20px h-20px" src="{{ asset('mfs/admin/assets/media/svg/brand-logos/tower.svg')}}"
                                                 alt="" />
                                         </span>
                                     </div>
@@ -912,7 +912,7 @@
         <!--end::Aside search-->
         <!--end::Aside user-->
     </div>
-    
+
     <div class="aside-menu flex-column-fluid">
         <div class="hover-scroll-overlay-y mx-3 my-5 my-lg-5" id="kt_aside_menu_wrapper" data-kt-scroll="true"
             data-kt-scroll-height="auto"
@@ -941,10 +941,10 @@
                         <span class="menu-heading fw-bold text-uppercase fs-7">MODULES</span>
                     </div>
                 </div>
-                
+
                 @can('view clientele')
                 <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
-                    
+
                     <span class="menu-link">
                         <span class="menu-icon">
                             <i class="ki-duotone ki-address-book fs-2">
@@ -971,8 +971,8 @@
                     </div>
                 </div>
                 @endcan
-                
-                
+
+
                 @can('view loans')
                 <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
                     <!--begin:Menu link-->
@@ -989,21 +989,21 @@
                         <span class="menu-title">Loans</span>
                         <span class="menu-arrow"></span>
                     </span>
-                    
+
                     <div class="menu-sub menu-sub-accordion">
-                        
+
                         @can('create loan')
                         <div class="menu-item">
                             <a class="menu-link" href="{{ route('proxy-loan-create') }}">
                                 <span class="menu-bullet">
                                     <span class="bullet bullet-dot"></span>
                                 </span>
-                                
+
                                 <span class="menu-title">Create Loan</span>
                             </a>
                         </div>
                         @endcan
-                        
+
                         {{-- @can('view pending') --}}
                         <div class="menu-item">
                             <a class="menu-link" href="{{ route('view-loan-requests') }}">
@@ -1049,7 +1049,7 @@
                     </div>
                 </div>
                 @endcan
-                
+
                 @can('view repayments')
                 <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
                     <span class="menu-link">
@@ -1062,7 +1062,7 @@
                         <span class="menu-title">Repayements</span>
                         <span class="menu-arrow"></span>
                     </span>
-                    
+
                     <div class="menu-sub menu-sub-accordion">
                         @can('view pending repayments')
                         <div class="menu-item">
@@ -1099,14 +1099,14 @@
                     </div>
                 </div>
                 @endcan
-                
+
                 @can('view operations')
                     <div class="menu-item pt-5">
                         <div class="menu-content">
                             <span class="menu-heading fw-bold text-uppercase fs-7">Operations & Staff</span>
                         </div>
                     </div>
-                
+
                     @can('view employees')
                     <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
                         <span class="menu-link">
@@ -1119,7 +1119,7 @@
                             <span class="menu-title">Employees</span>
                             <span class="menu-arrow"></span>
                         </span>
-                        
+
                         <div class="menu-sub menu-sub-accordion">
                             <div  class="menu-item menu-accordion mb-1">
                                 <a class="menu-link" href="{{ route('employees') }}">
@@ -1132,7 +1132,7 @@
                         </div>
                     </div>
                     @endcan
-                
+
                     @can('view accounting')
                     <div data-kt-menu-trigger="click" class="menu-item menu-accordion">
                         <span class="menu-link">
@@ -1145,7 +1145,7 @@
                             <span class="menu-title">Accounting</span>
                             <span class="menu-arrow"></span>
                         </span>
-                        
+
                         <div class="menu-sub menu-sub-accordion">
                             @can('view transactions')
                             <div class="menu-item menu-accordion mb-1">
@@ -1184,7 +1184,7 @@
                             <span class="menu-title">Reports</span>
                             <span class="menu-arrow"></span>
                         </span>
-                        
+
                         <div class="menu-sub menu-sub-accordion">
                             <div data-kt-menu-trigger="click" class="menu-item menu-accordion mb-1">
                                 <span class="menu-link">
@@ -1193,7 +1193,7 @@
                                     </span>
                                     <span class="menu-title">Loan Report</span>
                                 </span>
-                                
+
                             </div>
                         </div>
                     </div> --}}
@@ -1277,7 +1277,7 @@
                             </a>
                             <!--end:Menu link-->
                             <!--begin:Menu sub-->
-                            
+
                             <!--end:Menu sub-->
                         </div>
                         <!--end:Menu item-->
@@ -1288,7 +1288,7 @@
                 </div>
                 <!--end:Menu item-->
                 <!--begin:Menu item-->
-               
+
                 <!--end:Menu item-->
                 <!--begin:Menu item-->
                 <div class="menu-item">
@@ -1320,7 +1320,7 @@
                     <!--end:Menu link-->
                 </div>
                 @endrole
-                
+
             </div>
             <!--end::Menu-->
         </div>

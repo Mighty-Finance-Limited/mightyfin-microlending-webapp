@@ -7,7 +7,7 @@
 
     <!-- Favicons
     ================================================== -->
-    <link rel="shortcut icon" href="{{ asset('public/images/m.jpg') }}">
+    <link rel="shortcut icon" href="{{ asset('images/m.jpg') }}">
     <title>Home - Mighty Finance Solution</title>
 
     <link rel="canonical" href="index.php" />
@@ -54,30 +54,30 @@
         }
     </style>
     {{-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
-    <link rel="stylesheet" href="{{ asset('public/web/css/form-elements.css') }}">
-    <link rel="stylesheet" href="{{ asset('public/web/css/style.css') }}">
-    <link rel="stylesheet" href="{{ asset('public/web/css/st.css') }}">
+    <link rel="stylesheet" href="{{ asset('web/css/form-elements.css') }}">
+    <link rel="stylesheet" href="{{ asset('web/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('web/css/st.css') }}">
 
-    <link rel='stylesheet' id='wp-block-library-css' href='{{ asset("public/web/css/block-library-style.min.css") }}' type='text/css' media='all' />
-    <link rel='stylesheet' id='contact-form-7-css' href='{{ asset("public/web/css/css-styles.css") }}' type='text/css' media='all' />
+    <link rel='stylesheet' id='wp-block-library-css' href='{{ asset("web/css/block-library-style.min.css") }}' type='text/css' media='all' />
+    <link rel='stylesheet' id='contact-form-7-css' href='{{ asset("web/css/css-styles.css") }}' type='text/css' media='all' />
     <link rel='stylesheet' id='borrow-fonts-css' href='https://fonts.googleapis.com/css?family=Poppins%3A300%2C400%2C500%2C600%2C700%7CMerriweather%3A300%2C300i%2C400%2C400i%2C700%2C700i&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
-    <link rel='stylesheet' id='borrow-bootstrap-update-css' href='{{ asset("public/web/css/bootstrap-bootstrap.min.css") }}' type='text/css' media='all' />
-    <link rel='stylesheet' id='borrow-font-awesome-css' href='{{ asset("public/web/css/css-font-awesome.min.css") }}' type='text/css' media='all' />
-    <link rel='stylesheet' id='borrow-fontello-css' href='{{ asset("public/web/css/fontello-fontello.css") }}' type='text/css' media='all' />
-    <link rel='stylesheet' id='borrow-flaticon-css' href='{{ asset("public/web/css/css-flaticon.css") }}' type='text/css' media='all' />
-    <link rel='stylesheet' id='borrow-animsition-css' href='{{ asset("public/web/css/css-animsition.min.css") }}' type='text/css' media='all' />
-    <link rel='stylesheet' id='borrow-owl-carousel-css' href='{{ asset("public/web/css/css-owl.carousel.css") }}' type='text/css' media='all' />
-    <link rel='stylesheet' id='borrow-owl-theme-css' href='{{ asset("public/web/css/css-owl.theme.css") }}' type='text/css' media='all' />
-    <link rel='stylesheet' id='borrow-owl-transitions-css' href='{{ asset("public/web/css/css-owl.transitions.css") }}' type='text/css' media='all' />
-    <link rel='stylesheet' id='borrow-popup-css' href='{{ asset("public/web/css/css-magnific-popup.css") }}' type='text/css' media='all' />
-    <link rel='stylesheet' id='borrow-simple-slider-css' href='{{ asset("public/web/css/css-simple-slider.css") }}' type='text/css' media='all' />
-    <link rel='stylesheet' id='borrow-jquery-ui-css' href='{{ asset("public/web/css/css-jquery-ui.css") }}' type='text/css' media='all' />
-    <link rel='stylesheet' id='borrow-style-css' href='{{ asset("public/web/css/borrow-style.css") }}' type='text/css' media='all' />
-    <link rel='stylesheet' id='newsletter-css' href='{{ asset("public/web/css/newsletter-style.css") }}' type='text/css' media='all' />
-    <link rel='stylesheet' id='js_composer_front-css' href='{{ asset("public/web/css/css-js_composer.min.css") }}' type='text/css' media='all' />
-    <script type='text/javascript' src='{{ asset("public/web/js/jquery-jquery.js") }}'></script>
-    <script type='text/javascript' src='{{ asset("public/web/js/jquery-jquery-migrate.min.js") }}'></script>
-    <script type='text/javascript' src='{{ asset("public/web/js/royal_preloader.min.js") }}'></script>
+    <link rel='stylesheet' id='borrow-bootstrap-update-css' href='{{ asset("web/css/bootstrap-bootstrap.min.css") }}' type='text/css' media='all' />
+    <link rel='stylesheet' id='borrow-font-awesome-css' href='{{ asset("web/css/css-font-awesome.min.css") }}' type='text/css' media='all' />
+    <link rel='stylesheet' id='borrow-fontello-css' href='{{ asset("web/css/fontello-fontello.css") }}' type='text/css' media='all' />
+    <link rel='stylesheet' id='borrow-flaticon-css' href='{{ asset("web/css/css-flaticon.css") }}' type='text/css' media='all' />
+    <link rel='stylesheet' id='borrow-animsition-css' href='{{ asset("web/css/css-animsition.min.css") }}' type='text/css' media='all' />
+    <link rel='stylesheet' id='borrow-owl-carousel-css' href='{{ asset("web/css/css-owl.carousel.css") }}' type='text/css' media='all' />
+    <link rel='stylesheet' id='borrow-owl-theme-css' href='{{ asset("web/css/css-owl.theme.css") }}' type='text/css' media='all' />
+    <link rel='stylesheet' id='borrow-owl-transitions-css' href='{{ asset("web/css/css-owl.transitions.css") }}' type='text/css' media='all' />
+    <link rel='stylesheet' id='borrow-popup-css' href='{{ asset("web/css/css-magnific-popup.css") }}' type='text/css' media='all' />
+    <link rel='stylesheet' id='borrow-simple-slider-css' href='{{ asset("web/css/css-simple-slider.css") }}' type='text/css' media='all' />
+    <link rel='stylesheet' id='borrow-jquery-ui-css' href='{{ asset("web/css/css-jquery-ui.css") }}' type='text/css' media='all' />
+    <link rel='stylesheet' id='borrow-style-css' href='{{ asset("web/css/borrow-style.css") }}' type='text/css' media='all' />
+    <link rel='stylesheet' id='newsletter-css' href='{{ asset("web/css/newsletter-style.css") }}' type='text/css' media='all' />
+    <link rel='stylesheet' id='js_composer_front-css' href='{{ asset("web/css/css-js_composer.min.css") }}' type='text/css' media='all' />
+    <script type='text/javascript' src='{{ asset("web/js/jquery-jquery.js") }}'></script>
+    <script type='text/javascript' src='{{ asset("web/js/jquery-jquery-migrate.min.js") }}'></script>
+    <script type='text/javascript' src='{{ asset("web/js/royal_preloader.min.js") }}'></script>
     <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://mightyfinance.co.zm?rsd" />
     <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="wlwmanifest.xml" /> --}}
     <meta name="generator" content="greenwebb" />
@@ -970,7 +970,7 @@
 
     @include('layouts.footer')
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="{{ asset('public/web/js/scripts.js') }}"></script>
+    <script src="{{ asset('web/js/scripts.js') }}"></script>
     <script type="text/javascript">
         (function($) {
             "use strict";
@@ -998,7 +998,7 @@
             });
             Royal_Preloader.config({
                 mode: 'logo',
-                logo: '{{ asset("public/mfs/images/j.png") }}',
+                logo: '{{ asset("mfs/images/j.png") }}',
                 logo_size: [90, 60],
                 showProgress: true,
                 showPercentage: true,
@@ -1010,7 +1010,7 @@
 
     <script type="text/html" id="wpb-modifications"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <link rel='stylesheet' id='vc_tta_style-css' href='{{ asset("public/web/css/css-js_composer_tta.min.css") }}' type='text/css' media='all' />
+    <link rel='stylesheet' id='vc_tta_style-css' href='{{ asset("web/css/css-js_composer_tta.min.css") }}' type='text/css' media='all' />
 
     <script>
         var maps = document.getElementById('maps_location');
@@ -1023,22 +1023,21 @@
             maps.style.display = "block";
         }
     </script>
-    <script type='text/javascript' src='{{ asset("public/web/js/js-scripts.js") }}'></script>
-    <script type='text/javascript' src='{{ asset("public/web/js/js-modernizr.js") }}'></script>
-    <script type='text/javascript' src='{{ asset("public/web/js/js-bootstrap.min.js") }}'></script>
-    <script type='text/javascript' src='http://maps.googleapis.com/maps/api/js?key=AIzaSyBWcuOyOT32O67_1RFoES45tATsgXcdb4k&#038;ver=20151228'></script>
-    <script type='text/javascript' src='{{ asset("public/web/js/js-menumaker.js") }}'></script>
-    <script type='text/javascript' src='{{ asset("public/web/js/js-animsition.js") }}'></script>
-    <script type='text/javascript' src='{{ asset("public/web/js/js-jquery.sticky.js") }}'></script>
-    <script type='text/javascript' src='{{ asset("public/web/js/js-owl.carousel.min.js") }}'></script>
-    <script type='text/javascript' src='{{ asset("public/web/js/js-jquery.magnific-popup.min.js") }}'></script>
-    <script type='text/javascript' src='{{ asset("public/web/js/js-jquery.easing.min.js") }}'></script>
-    <script type='text/javascript' src='{{ asset("public/web/js/js-jquery.isotope.min.js") }}'></script>
-    <script type='text/javascript' src='{{ asset("public/web/js/js-simple-slider.js") }}'></script>
-    <script type='text/javascript' src='{{ asset("public/web/js/9824-js-jquery-ui.js") }}'></script>
-    <script type='text/javascript' src='{{ asset("public/web/js/js-jquery.nice-select.min.js") }}'></script>
-    <script type='text/javascript' src='{{ asset("public/web/js/js-fastclick.js") }}'></script>
-    <script type='text/javascript' src='{{ asset("public/web/js/js-custom.js") }}'></script>
+    <script type='text/javascript' src='{{ asset("web/js/js-scripts.js") }}'></script>
+    <script type='text/javascript' src='{{ asset("web/js/js-modernizr.js") }}'></script>
+    <script type='text/javascript' src='{{ asset("web/js/js-bootstrap.min.js") }}'></script>
+    <script type='text/javascript' src='{{ asset("web/js/js-menumaker.js") }}'></script>
+    <script type='text/javascript' src='{{ asset("web/js/js-animsition.js") }}'></script>
+    <script type='text/javascript' src='{{ asset("web/js/js-jquery.sticky.js") }}'></script>
+    <script type='text/javascript' src='{{ asset("web/js/js-owl.carousel.min.js") }}'></script>
+    <script type='text/javascript' src='{{ asset("web/js/js-jquery.magnific-popup.min.js") }}'></script>
+    <script type='text/javascript' src='{{ asset("web/js/js-jquery.easing.min.js") }}'></script>
+    <script type='text/javascript' src='{{ asset("web/js/js-jquery.isotope.min.js") }}'></script>
+    <script type='text/javascript' src='{{ asset("web/js/js-simple-slider.js") }}'></script>
+    <script type='text/javascript' src='{{ asset("web/js/9824-js-jquery-ui.js") }}'></script>
+    <script type='text/javascript' src='{{ asset("web/js/js-jquery.nice-select.min.js") }}'></script>
+    <script type='text/javascript' src='{{ asset("web/js/js-fastclick.js") }}'></script>
+    <script type='text/javascript' src='{{ asset("web/js/js-custom.js") }}'></script>
     <script type='text/javascript'>
         /* <![CDATA[ */
         var newsletter = {
@@ -1056,16 +1055,16 @@
     <script>
         document.getElementById('home').style.color = "#fec00f";
     </script>
-    <script type='text/javascript' src='{{ asset("public/web/js/subscription-validate.js") }}'></script>
-    <script type='text/javascript' src='{{ asset("public/web/js/js-wp-embed.min.js") }}'></script>
-    <script type='text/javascript' src='{{ asset("public/web/js/dist-js_composer_front.min.js") }}'></script>
-    <script type='text/javascript' src='{{ asset("public/web/js/vc_accordion-vc-accordion.min.js") }}'></script>
-    <script type='text/javascript' src='{{ asset("public/web/js/vc-tta-autoplay-vc-tta-autoplay.min.js") }}'></script>
-    <script type='text/javascript' src='{{ asset("public/web/js/vc_tabs-vc-tabs.min.js") }}'></script>
-    <script type='text/javascript' src='{{ asset("public/web/js/calculator.js") }}'></script>
-    <script type='text/javascript' src="{{ asset("public/web/js/7496-js-slider-calculator.js") }}"></script>
-    <script type="text/javascript" src="{{ asset("public/web/js/sweetalert.js") }}"></script>
-    <script src="{{ asset("public/web/js/getvalue.js") }}"></script>
+    <script type='text/javascript' src='{{ asset("web/js/subscription-validate.js") }}'></script>
+    <script type='text/javascript' src='{{ asset("web/js/js-wp-embed.min.js") }}'></script>
+    <script type='text/javascript' src='{{ asset("web/js/dist-js_composer_front.min.js") }}'></script>
+    <script type='text/javascript' src='{{ asset("web/js/vc_accordion-vc-accordion.min.js") }}'></script>
+    <script type='text/javascript' src='{{ asset("web/js/vc-tta-autoplay-vc-tta-autoplay.min.js") }}'></script>
+    <script type='text/javascript' src='{{ asset("web/js/vc_tabs-vc-tabs.min.js") }}'></script>
+    <script type='text/javascript' src='{{ asset("web/js/calculator.js") }}'></script>
+    <script type='text/javascript' src="{{ asset("web/js/7496-js-slider-calculator.js") }}"></script>
+    <script type="text/javascript" src="{{ asset("web/js/sweetalert.js") }}"></script>
+    <script src="{{ asset("web/js/getvalue.js") }}"></script>
 
 
 </body>

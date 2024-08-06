@@ -150,7 +150,7 @@
                             </tr>
                         </thead>
                         <tbody class="fw-semibold text-gray-600">
-                            
+
                             @forelse($users as $user)
                             <tr>
                                 <td>
@@ -159,7 +159,7 @@
                                     </div>
                                 </td>
                                 <td>
-                                    
+
                                     {{-- @if($user->profile_photo_path == null)
                                         @if($user->fname != null && $user->lname != null)
                                             <span>{{ $user->fname[0].' '.$user->lname[0] }}</span>
@@ -176,7 +176,7 @@
                                 </td>
                                 <td>{{ $user->jobTitle ?? 'No Data' }}</td>
                                 <td data-filter="visa">
-                                    {{-- <img src="{{ asset('public/mfs/admin/assets/media/svg/card-logos/visa.svg')}}" class="w-35px me-3" alt="" />
+                                    {{-- <img src="{{ asset('mfs/admin/assets/media/svg/card-logos/visa.svg')}}" class="w-35px me-3" alt="" />
                                     **** 6561 --}}
                                     {{ $user->nrc_no ?? $user->nrc ?? 'No Data' }}
                                 </td>
@@ -206,7 +206,7 @@
                                     <p>No User Found</p>
                                 </div>
                             </div>
-                            @endforelse 
+                            @endforelse
                         </tbody>
                     </table>
                     <!--end::Table-->

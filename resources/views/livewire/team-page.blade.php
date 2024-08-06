@@ -1,4 +1,4 @@
-<div class="page-header" style="background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), rgba(0, 0, 0, 0.2) url('{{ asset("public/web/images/1images-page-header.jpg") }}') no-repeat center;">
+<div class="page-header" style="background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), rgba(0, 0, 0, 0.2) url('{{ asset("web/images/1images-page-header.jpg") }}') no-repeat center;">
     <div class="container">
         <div class="row">
             <div class="col-md-12 ">
@@ -60,7 +60,7 @@
                                             <div class="row isotope" style="position: relative; overflow: hidden; height: 896.656px;">
                                                 <div class="col-md-4 col-sm-4 col-xs-12 gallery-masonry isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 448px, 0px);">
                                                     <div class="team-block mb30">
-                                                        <div class="team-img mb30"><img width="500" height="500" src="{{ asset('public/web/images/vwa.png') }}" class="img-responsive wp-post-image" alt="" loading="lazy" sizes="(max-width: 500px) 100vw, 500px">                                                                </div>
+                                                        <div class="team-img mb30"><img width="500" height="500" src="{{ asset('web/images/vwa.png') }}" class="img-responsive wp-post-image" alt="" loading="lazy" sizes="(max-width: 500px) 100vw, 500px">                                                                </div>
                                                         <div class="team-content text-center">
                                                             <a target="_blank" href="{{ route('ceo') }}">
                                                                 <h3>Vwanganji Bowa</h3>
@@ -71,7 +71,7 @@
                                                 </div>
                                                 <div class="col-md-4 col-sm-4 col-xs-12 gallery-masonry isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(727px, 0px, 0px);">
                                                     <div class="team-block mb30">
-                                                        <div class="team-img mb30"><img width="500" height="500" src="{{ asset('public/web/images/bowa.png') }}" class="img-responsive wp-post-image" alt="" loading="lazy" sizes="(max-width: 500px) 100vw, 500px"> </div>
+                                                        <div class="team-img mb30"><img width="500" height="500" src="{{ asset('web/images/bowa.png') }}" class="img-responsive wp-post-image" alt="" loading="lazy" sizes="(max-width: 500px) 100vw, 500px"> </div>
                                                         <div class="team-content text-center">
                                                             <a target="_blank" href="{{ route('coo') }}">
                                                                 <h3>Chiluba Bowa</h3>
@@ -82,7 +82,7 @@
                                                 </div>
                                                 <div class="col-md-4 col-sm-4 col-xs-12 gallery-masonry isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 0px, 0px);">
                                                     <div class="team-block mb30">
-                                                        <div class="team-img mb30"><img width="500" height="500" src="{{ asset('public/web/images/lemmy.png') }}" class="img-responsive wp-post-image" alt="" loading="lazy" sizes="(max-width: 500px) 100vw, 500px"> </div>
+                                                        <div class="team-img mb30"><img width="500" height="500" src="{{ asset('web/images/lemmy.png') }}" class="img-responsive wp-post-image" alt="" loading="lazy" sizes="(max-width: 500px) 100vw, 500px"> </div>
                                                         <div class="team-content text-center">
                                                             <a target="_blank" href="{{ route('cfo') }}">
                                                                 <h3>Lemmy Amatende</h3>
@@ -93,7 +93,7 @@
                                                 </div>
                                                 <div class="col-md-4 col-sm-4 col-xs-12 gallery-masonry isotope-item" style="position: absolute; left: 0px; top: 0px; transform: translate3d(363px, 0px, 0px);">
                                                     <div class="team-block mb30">
-                                                        <div class="team-img mb30"><img width="500" height="500" src="{{ asset('public/web/images/chanda.png') }}" class="img-responsive wp-post-image" alt="" loading="lazy" sizes="(max-width: 500px) 100vw, 500px"> </div>
+                                                        <div class="team-img mb30"><img width="500" height="500" src="{{ asset('web/images/chanda.png') }}" class="img-responsive wp-post-image" alt="" loading="lazy" sizes="(max-width: 500px) 100vw, 500px"> </div>
                                                         <div class="team-content text-center">
                                                             <a target="_blank" href="{{ route('sales') }}">
                                                                 <h3>Chanda Mwenda</h3>

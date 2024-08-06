@@ -3,7 +3,7 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-header">
-                    <h4 class="card-title">Employees</h4> 
+                    <h4 class="card-title">Employees</h4>
                     <div>
                         <button wire:click="exportEmployeesLoans()" title="Export to Excel" class="btn btn-square btn-success">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-spreadsheet" viewBox="0 0 16 16">
@@ -14,8 +14,8 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filetype-pdf" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM1.6 11.85H0v3.999h.791v-1.342h.803c.287 0 .531-.057.732-.173.203-.117.358-.275.463-.474a1.42 1.42 0 0 0 .161-.677c0-.25-.053-.476-.158-.677a1.176 1.176 0 0 0-.46-.477c-.2-.12-.443-.179-.732-.179Zm.545 1.333a.795.795 0 0 1-.085.38.574.574 0 0 1-.238.241.794.794 0 0 1-.375.082H.788V12.48h.66c.218 0 .389.06.512.181.123.122.185.296.185.522Zm1.217-1.333v3.999h1.46c.401 0 .734-.08.998-.237a1.45 1.45 0 0 0 .595-.689c.13-.3.196-.662.196-1.084 0-.42-.065-.778-.196-1.075a1.426 1.426 0 0 0-.589-.68c-.264-.156-.599-.234-1.005-.234H3.362Zm.791.645h.563c.248 0 .45.05.609.152a.89.89 0 0 1 .354.454c.079.201.118.452.118.753a2.3 2.3 0 0 1-.068.592 1.14 1.14 0 0 1-.196.422.8.8 0 0 1-.334.252 1.298 1.298 0 0 1-.483.082h-.563v-2.707Zm3.743 1.763v1.591h-.79V11.85h2.548v.653H7.896v1.117h1.606v.638H7.896Z"/>
                               </svg>
-                        </button>               
-                        <button data-toggle="modal" data-target="#createEmployeeModeling" class="btn btn-square btn-primary">New Employee</button>     
+                        </button>
+                        <button data-toggle="modal" data-target="#createEmployeeModeling" class="btn btn-square btn-primary">New Employee</button>
                     </div>
                 </div>
 
@@ -39,7 +39,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                
+
                                 @forelse($users as $user)
                                 <tr>
                                     <td style="text-align: center">
@@ -81,8 +81,8 @@
                                                 </svg>
                                             </a>
                                             <a href="#" wire:click="destory({{$user->id}})" onclick="confirm('Are you sure you want to permanently delete this account.') || event.stopImmediatePropagation();" class="btn btn-danger shadow btn-xs sharp"><i class="fa fa-trash"></i></a>
-                                        </div>												
-                                    </td>												
+                                        </div>
+                                    </td>
                                 </tr>
                                 @empty
                                 <div class="intro-y col-span-12 md:col-span-6">
@@ -108,7 +108,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal">
                     </button>
                 </div>
-                
+
                 <form method="POST" action="{{ route('create-user') }}"  class="needs-validation" validate enctype="multipart/form-data">
                     @csrf
                     <div class="modal-body">
@@ -122,12 +122,12 @@
                                                         <div class="col-6">
                                                             <div class="border-2 border-dashed shadow-xs border-slate-200/60 dark:border-darkmode-400 rounded-md p-0">
                                                                 <div class="h-20 relative image-fit cursor-pointer zoom-in mx-auto">
-                                                                    <img class="col-12" alt="" id="preview-image-before-upload_create" src="{{ asset('public/images/noimage.jpg') }}">
+                                                                    <img class="col-12" alt="" id="preview-image-before-upload_create" src="{{ asset('images/noimage.jpg') }}">
                                                                     {{-- <div title="Remove this profile photo?" class="tooltip w-5 h-5 flex items-center justify-center absolute rounded-full text-white bg-danger right-0 top-0 -mr-2 -mt-2"> <i data-lucide="x" class="w-4 h-4"></i> </div> --}}
                                                                 </div>
                                                                 <div class="mx-auto cursor-pointer relative mt-5">
                                                                     {{-- <button type="button" class="btn btn-square btn-primary">Add Photo</button> --}}
-                                                                    <input type="file" id="prof_image_create" name="image_path" class="w-full h-full top-0 left-0"> 
+                                                                    <input type="file" id="prof_image_create" name="image_path" class="w-full h-full top-0 left-0">
                                                                     {{-- <input type="file" name="image_path" class="w-full h-full"> --}}
                                                                 </div>
                                                                 <small>
@@ -136,7 +136,7 @@
                                                                     @endif --}}
                                                                 </small>
                                                             </div>
-                                                        </div>                                                        
+                                                        </div>
                                                     </div>
                                                     <div class="mb-3 row">
                                                         <label class="col-lg-4 col-form-label" for="validationCustom01">Firstname
@@ -245,8 +245,8 @@
                                                         </div>
                                                     </div>
 
-                                                    <input type="hidden" name="assigned_role" readonly class="form-control invisible" id="validationCustom09" value="employee" placeholder="Employee" required>                                                            
-                                                            
+                                                    <input type="hidden" name="assigned_role" readonly class="form-control invisible" id="validationCustom09" value="employee" placeholder="Employee" required>
+
                                                     <div class="mb-3 row">
                                                         <label class="col-lg-4 col-form-label" for="validationCustom04">Address <span
                                                                 class="text-danger">*</span>
@@ -304,7 +304,7 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-danger light" data-bs-dismiss="modal">Close</button>
                         <button type="submit" class="btn btn-primary" id="create-employee-toastr-success-bottom-left" data-bs-dismiss="modal">Save changes</button>
-                    </div>  
+                    </div>
                 </form>
             </div>
         </div>
@@ -320,21 +320,21 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal">
                     </button>
                 </div>
-                
+
                 <form method="POST" action="{{ route('update-user') }}"  class="needs-validation" validate enctype="multipart/form-data">
                     @csrf
                     <div class="modal-body">
                         <div class="col-lg-12">
                             <div class="card">
                                 <div class="card-body">
-                                    
+
                                     <div class="form-validation">
                                             <div class="row">
-                                                
+
                                                 <div class="col-xl-6 col-xxl-6 col-lg-6">
                                                     <div class="mb-2">
                                                         <div class="col-6">
-                                                            
+
                                                             <div class="border-2 border-dashed shadow-xs border-slate-200/60 dark:border-darkmode-400 rounded-md p-0">
                                                                 <div class="h-20 relative image-fit cursor-pointer zoom-in mx-auto">
                                                                     <img class="col-12" alt="" id="preview-image-before-upload_create" src="{{ 'public/'.Storage::url($userEdit->profile_photo_path) }}">
@@ -342,7 +342,7 @@
                                                                 </div>
                                                                 <div class="mx-auto cursor-pointer relative mt-5">
                                                                     {{-- <button type="button" class="btn btn-square btn-primary">Add Photo</button> --}}
-                                                                    <input type="file" id="prof_image_create" name="image_path" class="w-full h-full top-0 left-0"> 
+                                                                    <input type="file" id="prof_image_create" name="image_path" class="w-full h-full top-0 left-0">
                                                                     {{-- <input type="file" name="image_path" class="w-full h-full"> --}}
                                                                 </div>
                                                                 <small>
@@ -351,10 +351,10 @@
                                                                     @endif --}}
                                                                 </small>
                                                             </div>
-                                                        </div>                                                        
+                                                        </div>
                                                     </div>
                                                     <div class="mb-3 row">
-                                                        <label class="col-lg-4 col-form-label" for="validationCustom01">Firstname 
+                                                        <label class="col-lg-4 col-form-label" for="validationCustom01">Firstname
                                                             <span class="text-danger">*</span>
                                                         </label>
                                                         <div class="col-lg-6">
@@ -460,11 +460,11 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                   
+
                                                     {{-- Assigned Borrower Role --}}
                                                     <input type="hidden" value="employee" name="assigned_role" class="default-select wide form-control" placeholder="Borrower" id="validationCustom05">
                                                     <input type="hidden" value="{{$userEdit->id}}" name="user_edit_id" class="default-select wide form-control" placeholder="Borrower" id="validationCustom05">
-                                                     
+
                                                     <div class="mb-3 row">
                                                         <label class="col-lg-4 col-form-label" for="validationCustom04">Address<span
                                                                 class="text-danger">*</span>
@@ -488,7 +488,7 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-danger light" data-bs-dismiss="modal">Close</button>
                         <button type="submit" class="btn btn-primary" id="update-employee-toastr-success-bottom-left">Save changes</button>
-                    </div>  
+                    </div>
                 </form>
             </div>
         </div>
@@ -503,10 +503,10 @@
     $(document).ready(function (e) {
         $('#prof_image_create').change(function(){
             let reader = new FileReader();
-            reader.onload = (e) => { 
-                $('#preview-image-before-upload_create').attr('src', e.target.result); 
+            reader.onload = (e) => {
+                $('#preview-image-before-upload_create').attr('src', e.target.result);
             }
-            reader.readAsDataURL(this.files[0]); 
+            reader.readAsDataURL(this.files[0]);
         });
     });
 
@@ -522,8 +522,8 @@
             const imgData = canvas.toDataURL('image/png');
             // Add the image data URL to the PDF document
             doc.addImage(
-                imgData, 
-                'PNG', 
+                imgData,
+                'PNG',
                 2, // x-coordinate
                 2, // y-coordinate
             );

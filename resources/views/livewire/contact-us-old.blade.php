@@ -2,7 +2,7 @@
     <!--Start breadcrumb area-->
     <section class="breadcrumb-area">
         <div class="breadcrumb-area-bg"
-            style="background-image: url('{{ asset("public/box/images/backgrounds/breadcrumb-area-bg-6.jpg") }}');"></div>
+            style="background-image: url('{{ asset("box/images/backgrounds/breadcrumb-area-bg-6.jpg") }}');"></div>
         <div class="container">
             <div class="row">
                 <div class="col-xl-12">
@@ -23,13 +23,13 @@
         </div>
     </section>
     <!--End breadcrumb area-->
-    
-    
+
+
     <!--Start Main Contact Form Area-->
     <section class="main-contact-form-area">
         <div class="container">
             <div class="row">
-    
+
                 <div class="col-xl-6">
                     <div class="contact-info-box-style1">
                         <div class="box1"></div>
@@ -37,7 +37,7 @@
                             <h2>Get Support for<br> any Queries or Complaints</h2>
                             <p>Committed to helping you meet all your Financing needs.</p>
                         </div>
-    
+
                         <ul class="contact-info-1">
                             <li>
                                 <div class="icon">
@@ -72,7 +72,7 @@
                                 </div>
                             </li>
                         </ul>
-    
+
                         <div class="bottom-box">
                             <div class="btn-box">
                                 <a href="#"><i class="fas fa-arrow-down"></i> Customer Care</a>
@@ -102,15 +102,15 @@
                                 </ul>
                             </div>
                         </div>
-    
+
                     </div>
                 </div>
-    
-    
+
+
                 <div class="col-xl-6">
                     <div class="contact-form">
                         <form name="contact_form" class="default-form2">
-    
+
                             <div class="form-group">
                                 <label>Name</label>
                                 <div class="input-box">
@@ -126,7 +126,7 @@
                                     @error('email') <span style="color:red" class="error">{{ $message }}</span> @enderror
                                 </div>
                             </div>
-    
+
                             <div class="form-group">
                                 <label>Phone. Num</label>
                                 <div class="input-box">
@@ -134,7 +134,7 @@
                                     @error('phone') <span style="color:red" class="error">{{ $message }}</span> @enderror
                                 </div>
                             </div>
-    
+
                             <div class="form-group">
                                 <label>Subject</label>
                                 <div class="input-box">
@@ -143,25 +143,25 @@
                                         @error('subject') <span style="color:red" class="error">{{ $message }}</span> @enderror
                                 </div>
                             </div>
-    
+
                             <div class="form-group">
                                 <label>Message</label>
                                 <div class="input-box">
                                     <textarea wire:model="message" id="formMessage" placeholder=""required="">
-                                        
+
                                     </textarea>
                                     @error('message') <span style="color:red" class="error">{{ $message }}</span> @enderror
                                 </div>
                             </div>
-    
-                            
-    
+
+
+
                         </form>
                         <div class="button-box">
                             {{-- <input id="form_botcheck" name="botcheck" class="form-control" type="hidden"
                                 value=""> --}}
                             <button class="btn-one" wire:click.prevent="send()" wire:loading.attr="disabled" :disabled="isDisabled">
-                                
+
                                 <span class="txt">
                                     <span>
                                         <svg
@@ -197,12 +197,12 @@
                         </div>
                     </div>
                 </div>
-    
+
             </div>
         </div>
     </section>
     <!--End Main Contact Form Area-->
-    
+
     <!--Google Map Start-->
     <section class="google-map">
         <iframe class="google-map__one" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.584425154795!2d28.237393314749035!3d-12.805465259963235!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x196ce628ce6a7849%3A0x2d5c09397c32e75d!2sThe%20Copperbelt%20University!5e0!3m2!1sen!2szm!4v1676302365652!5m2!1sen!2szm" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -233,7 +233,7 @@
                     </div>
                 </div> --}}
                 <!--End Branch Atm Tab Buttom-->
-    
+
                 <!--Start Tabs Content Box-->
                 <div class="tabs-content-box">
                     <!--Tab-->
@@ -260,7 +260,7 @@
                             </ul>
                         </div>
                     </div>
-    
+
                     <!--Tab-->
                     {{-- <div class="tab-content-box-item" id="atm">
                         <div class="branch-atm-tab-content-box-item">
@@ -286,13 +286,13 @@
                     </div> --}}
                 </div>
                 <!--End Tabs Content Box-->
-    
+
             </div>
         </div>
-    
+
     </section>
     <!--Google Map End-->
-    
+
     <!--Start Customer Care Numbers Area-->
     <section class="customer-care-numbers-area">
         <div class="container">
@@ -302,7 +302,7 @@
             <div class="row">
                 <div class="col-xl-12">
                     <div class="customer-care-numbers-tab">
-    
+
                         <div class="customer-care-numbers-tab__button">
                             <ul class="tabs-button-box clearfix">
                                 <li data-tab="#personal-banking" class="tab-btn-item active-btn-item">
@@ -313,12 +313,12 @@
                                 </li>
                             </ul>
                         </div>
-    
+
                         <!--Start Tabs Content Box-->
                         <div class="tabs-content-box">
                             <!--Tab-->
                             <div class="tab-content-box-item tab-content-box-item-active" id="personal-banking">
-    
+
                                 <div class="customer-care-numbers-tab-content-box-item">
                                     <div class="customer-care-numbers-table-box">
                                         <div class="table-outer">
@@ -366,18 +366,18 @@
                                                 </tbody>
                                             </table>
                                         </div>
-    
+
                                         <div class="bottom-text text-center">
                                             {{-- <h3>To submit your complaint, <a href="#">Click here</a></h3> --}}
                                         </div>
-    
+
                                     </div>
                                 </div>
-    
+
                             </div>
                             <!--Tab-->
                             <div class="tab-content-box-item" id="corporate-banking">
-    
+
                                 <div class="customer-care-numbers-tab-content-box-item">
                                     <div class="customer-care-numbers-table-box">
                                         <div class="table-outer">
@@ -425,27 +425,27 @@
                                                 </tbody>
                                             </table>
                                         </div>
-    
+
                                         <div class="bottom-text text-center">
                                             {{-- <h3>To submit your complaint, <a href="#">Click here</a></h3> --}}
                                         </div>
-    
+
                                     </div>
                                 </div>
-    
+
                             </div>
-    
+
                         </div>
-    
+
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!--End Customer Care Numbers Area-->
-    
+
     </div>
-    
+
     <script>
     $(document).ready(function(){
         const input = document.getElementById('phoneNumb');

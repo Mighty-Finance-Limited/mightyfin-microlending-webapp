@@ -13,12 +13,12 @@
                     </span>
                 </a>
             </div>
-            
+
             <div class="card-body">
                 <div id="createNewLoanMain" tabindex="-1" aria-hidden="true">
                     <div style="height: 200vh;" class="modal-dialog modal-lg">
                         <div class="modal-content p-4">
-                
+
                             <div id="smartwizard" class="form-wizard order-create">
                                 <form id="step-form-horizontal" class="step-form-horizontal h-full" action="{{ route("proxy-apply-loan") }}" method="POST" enctype="multipart/form-data">
                                     @csrf
@@ -38,8 +38,8 @@
                                                         @empty
                                                         <option value="">No Customers</option>
                                                         @endforelse
-                                                    </select> 
-                                                    <small id="validuser_id" style="color:red">You need to pick a borrower!</small>                        
+                                                    </select>
+                                                    <small id="validuser_id" style="color:red">You need to pick a borrower!</small>
                                                 </div>
                                             </div>
                                             <input type="hidden" name="proxyloan" value="proxyloan">
@@ -56,7 +56,7 @@
                                                     </select>
                                                 </div>
                                             </div>
-                                            
+
                                             <div class="col-lg-6 mb-2">
                                                 <div class="mb-3">
                                                     <label class="text-label form-label">Amount (ZMW)</label>
@@ -103,7 +103,7 @@
                                                     <label class="text-label form-label">Basic Pay*</label>
                                                     <input id="basic_pay_field" value="{{ $user_basic_pay }}" name="basic_pay" class=" form-control" >
                                                     <small id="validbasicpayl2" style="color:red">Basic Pay is required!</small>
-            
+
                                                 </div>
                                             </div>
                                             <div class="col-lg-6 mb-3">
@@ -157,7 +157,7 @@
                                                         <option value="Spouse">Spouse</option>
                                                         <option value="Work Mate">Work Mate</option>
                                                         <option value="Close Friend">Close Friend</option>
-                                                    </select> 
+                                                    </select>
                                                     <small id="validg_relation22" style="color:red">Missing information!</small>
                                                 </div>
                                             </div>
@@ -167,12 +167,12 @@
                                                     <select type="text" name="g_gender" id="g_gender22" class="form-control">
                                                         <option value="Male">Male</option>
                                                         <option value="Female">Female</option>
-                                                    </select> 
+                                                    </select>
                                                     <small id="validg_gender22" style="color:red">Missing information!</small>
                                                 </div>
                                             </div>
                                         </div>
-                
+
                                         <div class="row">
                                             <div class="col-lg-6 mb-2">
                                                 <div class="mb-3">
@@ -209,7 +209,7 @@
                                                         <option value="Spouse">Spouse</option>
                                                         <option value="Work Mate">Work Mate</option>
                                                         <option value="Close Friend">Close Friend</option>
-                                                    </select> 
+                                                    </select>
                                                 </div>
                                             </div>
                                             <div class="col-lg-6 mb-2">
@@ -218,7 +218,7 @@
                                                     <select type="text" name="g2_gender" class="form-control">
                                                         <option value="Male">Male</option>
                                                         <option value="Female">Female</option>
-                                                    </select> 
+                                                    </select>
                                                 </div>
                                             </div>
                                         </div>
@@ -265,7 +265,7 @@
                                                         <option value="Spouse">Spouse</option>
                                                         <option value="Work Mate">Work Mate</option>
                                                         <option value="Close Friend">Close Friend</option>
-                                                    </select> 
+                                                    </select>
                                                     {{-- <small id="validnok_relation2" style="color:red">Missing information!</small> --}}
                                                 </div>
                                             </div>
@@ -275,7 +275,7 @@
                                                     <select type="text" name="nok_gender" id="nok_gender22" class="form-control">
                                                         <option value="Male">Male</option>
                                                         <option value="Female">Female</option>
-                                                    </select> 
+                                                    </select>
                                                     {{-- <small id="validnok_gender2" style="color:red">Missing information!</small> --}}
                                                 </div>
                                             </div>
@@ -308,7 +308,7 @@
                             </div>
                             <div id="loaderloancreate2" class="mx-auto">
                                 <div class="container-fluid content-center justify-center items-center">
-                                    <img width="60" src="{{ asset('public/loader/loading.gif') }}">
+                                    <img width="60" src="{{ asset('loader/loading.gif') }}">
                                     <span>Please wait a minute</span>
                                 </div>
                             </div>
@@ -323,7 +323,7 @@
 
     <script type="text/javascript">
         $(document).ready(function (e) {
-            
+
             document.getElementById("loaderloancreate2").style.display = "none";
             document.getElementById("validbasicpayl2").style.display = "none";
             document.getElementById("validnetpayl2").style.display = "none";

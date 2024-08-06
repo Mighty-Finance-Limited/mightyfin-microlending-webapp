@@ -9,7 +9,7 @@
                 <div class="single-blog-style1 wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
                     <div class="img-holder">
                         <div class="inner">
-                            <img src="{{ asset('public/box/images/refinance.png') }}" alt="">
+                            <img src="{{ asset('box/images/refinance.png') }}" alt="">
                             <div class="overlay-icon">
                                 <a href="blog-single.php">
                                     <span class="icon-right-arrow"></span>
@@ -29,7 +29,7 @@
                     <div class="text-holder">
                         <small>
                             <a href="{{ route('view-asset-loans') }}">
-                                A form of asset-based finance that uses assets on your balance sheet as security against lending.            
+                                A form of asset-based finance that uses assets on your balance sheet as security against lending.
                             </a>
                         </small>
                         {{-- <div class="bottom">
@@ -50,7 +50,7 @@
                 <div class="single-blog-style1 wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
                     <div class="img-holder">
                         <div class="inner">
-                            <img src="{{ asset('public/box/images/pay.png')}}" alt="">
+                            <img src="{{ asset('box/images/pay.png')}}" alt="">
                             <div class="overlay-icon">
                                 <a href="blog-single.php">
                                     <span class="icon-right-arrow"></span>
@@ -90,7 +90,7 @@
                 <div class="single-blog-style1 wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
                     <div class="img-holder">
                         <div class="inner">
-                            <img src="{{asset('public/box/images/graduated.png')}}" alt="">
+                            <img src="{{asset('box/images/graduated.png')}}" alt="">
                             <div class="overlay-icon">
                                 <a href="blog-single.php">
                                     <span class="icon-right-arrow"></span>
@@ -125,12 +125,12 @@
                         </div> --}}
                     </div>
                 </div>
-            </div>  
+            </div>
             <div class="col-xl-3 col-lg-3">
                 <div class="single-blog-style1 wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
                     <div class="img-holder">
                         <div class="inner">
-                            <img src="{{ asset('public/box/images/car.png') }}" alt="">
+                            <img src="{{ asset('box/images/car.png') }}" alt="">
                             <div class="overlay-icon">
                                 <a href="blog-single.php">
                                     <span class="icon-right-arrow"></span>
@@ -170,7 +170,7 @@
                 <div class="single-blog-style1 wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
                     <div class="img-holder">
                         <div class="inner">
-                            <img src="{{ asset('public/box/images/sme.png') }}" alt="">
+                            <img src="{{ asset('box/images/sme.png') }}" alt="">
                             <div class="overlay-icon">
                                 <a href="blog-single.php">
                                     <span class="icon-right-arrow"></span>
@@ -211,7 +211,7 @@
                 <div class="single-blog-style1 wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
                     <div class="img-holder">
                         <div class="inner">
-                            <img src="{{ asset('public/box/images/refinancing.png') }}" alt="">
+                            <img src="{{ asset('box/images/refinancing.png') }}" alt="">
                             <div class="overlay-icon">
                                 <a href="blog-single.php">
                                     <span class="icon-right-arrow"></span>
@@ -231,11 +231,11 @@
                     <div class="text-holder">
                         <small>
                             <a href="{{ route('view-asset-loans') }}">
-                                You can rely on Home Improvement Loans from HDFC Bank for internal and 
-                                external repairs and restructuring. This loan covers various home 
-                                repair/renovation activities like painting, waterproofing and roofing, plumbing, 
-                                electrical work, tiling and flooring, grills, windows, compound walls, 
-                                and much more.                            
+                                You can rely on Home Improvement Loans from HDFC Bank for internal and
+                                external repairs and restructuring. This loan covers various home
+                                repair/renovation activities like painting, waterproofing and roofing, plumbing,
+                                electrical work, tiling and flooring, grills, windows, compound walls,
+                                and much more.
                             </a>
                         </small>
                         {{-- <div class="bottom">
@@ -256,7 +256,7 @@
                 <div class="single-blog-style1 wow fadeInUp" data-wow-delay="00ms" data-wow-duration="1500ms">
                     <div class="img-holder">
                         <div class="inner">
-                            <img src="{{ asset('public/box/images/presentation.png') }}" alt="">
+                            <img src="{{ asset('box/images/presentation.png') }}" alt="">
                             <div class="overlay-icon">
                                 <a href="blog-single.php">
                                     <span class="icon-right-arrow"></span>
@@ -276,7 +276,7 @@
                     <div class="text-holder">
                         <small>
                             <a href="{{ route('view-asset-loans') }}">
-                                Bridge Trust Finance helps women entrepreneurs launch new businesses and compete in the marketplace. 
+                                Bridge Trust Finance helps women entrepreneurs launch new businesses and compete in the marketplace.
                                 Connect with the training and funding opportunities specifically for women.                            </a>
                         </small>
                         {{-- <div class="bottom">

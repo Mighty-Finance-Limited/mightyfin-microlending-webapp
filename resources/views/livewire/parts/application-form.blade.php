@@ -522,7 +522,7 @@
 
                         <div id="webloaderdashboard" class="mx-auto">
                             <div style="margin:auto" class="container-fluid content-center justify-center items-center">
-                                <img width="60" src="{{ asset('public/loader/loading.gif') }}">
+                                <img width="60" src="{{ asset('loader/loading.gif') }}">
                                 <span>Please wait a minute</span>
                             </div>
                         </div>

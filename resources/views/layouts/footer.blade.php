@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-sm-4 col-xs-12">
-                    <div class="footer-logo"> <img src="{{ asset('public/web/images/01-ft-logo.png') }}" alt=""> </div>
+                    <div class="footer-logo"> <img src="{{ asset('web/images/01-ft-logo.png') }}" alt=""> </div>
                 </div>
                 <div class="col-md-8 col-sm-8 col-xs-12">
                     <div class="row">
@@ -105,7 +105,7 @@
                                                 <li><a id="personal" href="{{ route('bridging') }}">Business Funding</a></li>
                                                 <li><a id="sme" href="{{ route('credit') }}">Payday Loans</a></li>
                                                 <li><a id="business" href="{{ route('equipment') }}">Women Financing</a></li>
-                                                
+
                                             </ul>
                                         </div>
                                     </div>

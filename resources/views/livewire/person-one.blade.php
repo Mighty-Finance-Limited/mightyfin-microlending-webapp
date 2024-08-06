@@ -1,4 +1,4 @@
-<div class="page-header" style="background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), rgba(0, 0, 0, 0.2) url('{{ asset("public/web/images/1images-page-header.jpg") }}') no-repeat center;">
+<div class="page-header" style="background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), rgba(0, 0, 0, 0.2) url('{{ asset("web/images/1images-page-header.jpg") }}') no-repeat center;">
     <div class="container">
         <div class="row">
             <div class="col-md-12 ">
@@ -50,7 +50,7 @@
                                             <div class="wpb_single_image wpb_content_element vc_align_left">
 
                                                 <figure class="wpb_wrapper vc_figure">
-                                                    <div class="vc_single_image-wrapper   vc_box_border_grey"><img width="320" height="350" src="{{ asset('public/web/images/vwa.png') }}" class="img-responsive wp-post-image" alt="" loading="lazy" sizes="(max-width: 500px) 100vw, 500px"></div>
+                                                    <div class="vc_single_image-wrapper   vc_box_border_grey"><img width="320" height="350" src="{{ asset('web/images/vwa.png') }}" class="img-responsive wp-post-image" alt="" loading="lazy" sizes="(max-width: 500px) 100vw, 500px"></div>
                                                 </figure>
                                             </div>
                                         </div>
@@ -70,7 +70,7 @@
                                                     <ul class="listnone widget-contact">
                                                         <li>Phone: <strong>(096) 6892393 </strong></li>
                                                         <li>Email: vbowa@mightfinance.co.zm</li>
-                                                        
+
                                                     </ul>
                                                     <p>Call me or fill out <a href="http://mightyfinance.co.zm/contact-us.php">contact form</a> to receive a free analysis. I look forward to working with you.</p>
 

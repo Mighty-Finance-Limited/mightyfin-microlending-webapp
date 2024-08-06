@@ -82,7 +82,7 @@
             <tr>
               <td style="padding:40px 30px 30px 30px;text-align:center;font-size:1.5em;font-weight:bold;">
                 <a href="https://mightyfinance.co.zm" style="text-decoration:none;">
-                  <img alt="Mighty Finance Solutions"  style="width:90px; height:60px;border:none;text-decoration:none;color:#750303;" src="{{ asset('public/web/images/01-ft-logo.png') }}">
+                  <img alt="Mighty Finance Solutions"  style="width:90px; height:60px;border:none;text-decoration:none;color:#750303;" src="{{ asset('web/images/01-ft-logo.png') }}">
                 </a>
               </td>
             </tr>
@@ -92,26 +92,26 @@
                 <h1 style="text-align:center;margin-top:0;margin-bottom:1.38em;font-size:1.953em;line-height:1.3;font-weight:bold;letter-spacing:-0.02em;">
                     New Loan Request
                 </h1>
-                
+
                 <p>
                     @foreach ($introLines as $line)
                         {{ $line }}
                     @endforeach
                 </p>
-                
+
                 <p style="text-align: center;margin: 2.5em auto;">
                   <a class="button" href="{{ $actionUrl }}" style="
-                        background-color: rgb(57, 8, 77); 
-                        text-decoration: none; 
+                        background-color: rgb(57, 8, 77);
+                        text-decoration: none;
                         padding: 1em 1.5em;
-                        color: #ffffff; 
+                        color: #ffffff;
                         border-radius: 48px;">
                     <!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%;mso-text-raise:20pt">&nbsp;</i><![endif]-->
                     <span style="mso-text-raise:10pt;font-weight:bold;">View More Details!</span>
                     <!--[if mso]><i style="letter-spacing: 25px;mso-font-width:-100%">&nbsp;</i><![endif]-->
                   </a>
                 </p>
-                
+
               </td>
             </tr>
             <tr>

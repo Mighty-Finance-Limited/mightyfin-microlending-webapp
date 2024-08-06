@@ -20,7 +20,7 @@
                     Looks like you are not verified yet. Verify yourself to use the
                     full potential of Mighty Finance Soultion.
                   </p>
-    
+
                   <ul>
                     <li>
                       <a href="{{ route('profile.show') }}">
@@ -55,18 +55,18 @@
                       and reliable.
                     </p>
                     <a href="#" class="btn btn-primary">
-                      <img src="{{ asset('public/mfs/images/android.svg')}}" alt="" />
+                      <img src="{{ asset('mfs/images/android.svg')}}" alt="" />
                     </a>
                     <br />
                     <div class="mt-3"></div>
                     <a href="#" class="btn btn-primary">
-                      <img src="{{ asset('public/mfs/images/apple.svg')}}" alt="" />
+                      <img src="{{ asset('mfs/images/apple.svg')}}" alt="" />
                     </a>
                   </div>
                 </div>
               </div>
             </div>
-    
+
             <div class="col-xxl-12">
               <div class="card">
                 <div class="card-header">
@@ -115,7 +115,7 @@
                 </div>
               </div>
             </div>
-    
+
             {{-- <div class="col-xxl-8 col-xl-6">
               <div class="card">
                 <div class="card-header">

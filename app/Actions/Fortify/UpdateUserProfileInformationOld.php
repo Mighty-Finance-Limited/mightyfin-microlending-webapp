@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Validator;
 use Illuminate\Validation\Rule;
 use Laravel\Fortify\Contracts\UpdatesUserProfileInformation;
 
-class UpdateUserProfileInformation implements UpdatesUserProfileInformation
+class UpdateUserProfileInformationOld implements UpdatesUserProfileInformation
 {
     /**
      * Validate and update the given user's profile information.
@@ -35,7 +35,7 @@ class UpdateUserProfileInformation implements UpdatesUserProfileInformation
             'id_type' => ['required'],
         ])->validateWithBag('updateProfileInformation');
 
-        
+
         if (isset($input['photo'])) {
             $user->updateProfilePhoto($input['photo']);
         }
@@ -45,10 +45,10 @@ class UpdateUserProfileInformation implements UpdatesUserProfileInformation
 
             $loan = Application::where('status', 0)->where('complete', 0)
                         ->where('user_id', auth()->user()->id)->first();
-            
+
             if($loan !== null){
                 if($loan->tpin_file !== 'no file' && $loan->payslip_file !== 'no file' && $loan->nrc_file !== null){
-                    
+
                     $loan->complete = 1;
                     $loan->save();
             }
@@ -81,6 +81,7 @@ class UpdateUserProfileInformation implements UpdatesUserProfileInformation
                 dd($th);
             }
         }
+    }
     }
 
     /**

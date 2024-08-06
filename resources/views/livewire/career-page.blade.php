@@ -1,7 +1,7 @@
 <!--Start breadcrumb area-->
 <section class="breadcrumb-area">
     <div class="breadcrumb-area-bg"
-    style="background-image: url('{{ asset("public/box/images/careers-1.jpg") }}');"></div>
+    style="background-image: url('{{ asset("box/images/careers-1.jpg") }}');"></div>
     <div class="container">
         <div class="row">
             <div class="col-xl-12">
@@ -31,7 +31,7 @@
             <div class="col-xl-6">
                 <div class="">
                     <div class="inner">
-                        <img src="{{ asset('public/box/images/careers-team.jpg') }}" alt="">
+                        <img src="{{ asset('box/images/careers-team.jpg') }}" alt="">
                         <div class="shape-1">
                             <img src="assets/images/shapes/intro-style2-img-box-shape-1.png" alt="">
                         </div>
@@ -44,16 +44,16 @@
                         <h2>Mountains Move<br> for a Determined Team</h2>
                     </div>
                     <div class="text">
-                        <p>Looking for a career where you can grow, learn, and make an impact? 
-                            Our careers page is the place to be. We're always on the lookout for 
+                        <p>Looking for a career where you can grow, learn, and make an impact?
+                            Our careers page is the place to be. We're always on the lookout for
                             talented and passionate individuals to join our team and help us make
-                             a difference in the world. Whether you're just starting out or have 
-                             years of experience, we offer a variety of opportunities to suit your 
-                             skills and interests. From marketing to engineering, finance to customer 
-                             service, we have a diverse range of roles that can help you take your 
-                             career to the next level. And with a dynamic and supportive work culture, 
-                             you'll have the resources you need to thrive. 
-                             So what are you waiting for? Check out our careers page now and 
+                             a difference in the world. Whether you're just starting out or have
+                             years of experience, we offer a variety of opportunities to suit your
+                             skills and interests. From marketing to engineering, finance to customer
+                             service, we have a diverse range of roles that can help you take your
+                             career to the next level. And with a dynamic and supportive work culture,
+                             you'll have the resources you need to thrive.
+                             So what are you waiting for? Check out our careers page now and
                              find your next big opportunity.</p>
                     </div>
                     <div class="send-resume-box">

@@ -306,7 +306,7 @@
                                                 <td>
                                                     <div class="trans-list">
                                                         <div class="profile-img">
-                                                            <img src="{{ asset('public/images/trans/3.jpg') }}" class="avtar" alt="">
+                                                            <img src="{{ asset('images/trans/3.jpg') }}" class="avtar" alt="">
                                                         </div>
                                                         <div class="user-info">
                                                             <h6 class="font-w500 mb-0 ms-3">{{ $loan->fname.' '.$loan->lname }}</h6>

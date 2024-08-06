@@ -1,5 +1,5 @@
 <div class="w-full">
-    
+
     <!-- Snippet -->
     <section class="flex flex-col justify-center antialiased bg-gray-200 text-gray-600 p-4">
         <div class="">
@@ -9,8 +9,8 @@
                     <!-- Card header -->
                     <header class="text-center px-5 pb-5">
                         <!-- Avatar -->
-                        <img width="20" class="inline-flex -mt-9 w-[72px] h-[72px] fill-current rounded-full border-4 border-white box-content shadow mb-3" src="{{ asset('public/mfs/images/j.png') }}">
-                        
+                        <img width="20" class="inline-flex -mt-9 w-[72px] h-[72px] fill-current rounded-full border-4 border-white box-content shadow mb-3" src="{{ asset('mfs/images/j.png') }}">
+
                         <!-- Card name -->
                         <h3 class="text-xl font-bold text-gray-900 mb-1">Invest Funds.</h3>
                         <div class="text-sm font-medium text-gray-500">IFN #00224</div>
@@ -37,7 +37,7 @@
             </div>
         </div>
     </section>
-    
+
     <!-- More components -->
     {{-- <div x-show="open" class="fixed bottom-0 right-0 w-full md:bottom-8 md:right-12 md:w-auto z-60" x-data="{ open: true }">
         <div class="bg-gray-800 text-gray-50 text-sm p-3 md:rounded shadow-lg flex justify-between">

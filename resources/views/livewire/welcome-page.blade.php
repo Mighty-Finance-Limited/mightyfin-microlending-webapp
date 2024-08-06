@@ -314,7 +314,7 @@
                         <div class="wpb_text_column wpb_content_element vc_custom_1531470973815">
                             <div class="wpb_wrapper">
                                 <p><a class="mr20" href="#"><img class="alignnone size-full wp-image-1438"
-                                            src="{{ asset('public/web/images/ph.png') }}" alt=""
+                                            src="{{ asset('web/images/ph.png') }}" alt=""
                                             width="170" height="50" /></a> </p>
                             </div>
                         </div>
@@ -336,14 +336,14 @@
                                     <div class="col-4">
                                         <p><a class="mr20" href="#"><img
                                                     class="alignnone size-full wp-image-1438"
-                                                    src="{{ asset('public/web/images/app-store-img.png') }}"
+                                                    src="{{ asset('web/images/app-store-img.png') }}"
                                                     alt="" width="170" height="50" /></a>  </p>
                                     </div>
                                     <div class="col-4">
                                         <p> <a
                                                 class="mr20" href="#"><img
                                                     class="alignnone size-medium wp-image-1439"
-                                                    src="{{ asset('public/web/images/google-play-img.png') }}"
+                                                    src="{{ asset('web/images/google-play-img.png') }}"
                                                     alt="" width="170" height="50" /></a> </p>
                                     </div>
                                 </div>

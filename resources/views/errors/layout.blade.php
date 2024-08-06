@@ -11,9 +11,9 @@
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>Oops - Mighty Finance Solution</title>
         <!-- Favicon icon -->
-        <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('public/web/images/favicon.png') }}">
-        <link href="{{ asset('public/web/css/style.css') }}" rel="stylesheet">
-        
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('web/images/favicon.png') }}">
+        <link href="{{ asset('web/css/style.css') }}" rel="stylesheet">
+
     </head>
     <body>
         <div class="authincation h-100">
@@ -24,15 +24,15 @@
                             @yield('message')
                             <div>
                                 <a class="btn btn-primary" href="{{ route('dashboard') }}">Back to Home</a>
-                            </div>	
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </body>
-    <script src="{{ asset('public/web/vendor/global/global.min.js') }}"></script>
-    <script src="{{ asset('public/web/vendor/bootstrap-select/dist/js/bootstrap-select.min.js') }}"></script>
-    <script src="{{ asset('public/web/js/custom.min.js') }}"></script>
-    <script src="{{ asset('public/web/js/deznav-init.js') }}"></script>
+    <script src="{{ asset('web/vendor/global/global.min.js') }}"></script>
+    <script src="{{ asset('web/vendor/bootstrap-select/dist/js/bootstrap-select.min.js') }}"></script>
+    <script src="{{ asset('web/js/custom.min.js') }}"></script>
+    <script src="{{ asset('web/js/deznav-init.js') }}"></script>
 </html>

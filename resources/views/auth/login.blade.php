@@ -10,9 +10,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mighty Finance Solution | Sign In</title>
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('public/images/m.jpg') }}" />
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('images/m.jpg') }}" />
     <!-- Custom Stylesheet -->
-    <link href="{{ asset('public/theme/css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('theme/css/style.css') }}" rel="stylesheet">
     <style>
         a {
             color: rgb(255, 187, 0);
@@ -112,9 +112,9 @@
         </div>
     </div>
 
-    <script src="{{ asset('public/mfs/vendor/jquery/jquery.min.js') }}"></script>
-    <script src="{{ asset('public/mfs/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
-    <script src="{{ asset('public/mfs/js/scripts.js') }}"></script>
+    <script src="{{ asset('mfs/vendor/jquery/jquery.min.js') }}"></script>
+    <script src="{{ asset('mfs/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('mfs/js/scripts.js') }}"></script>
 </body>
 <!-- Mirrored from tende.vercel.app/signin.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 17 Nov 2023 16:21:44 GMT -->
 

@@ -1,6 +1,6 @@
 <div>
 <!-- subheader begin -->
-<div class="page-header" style="background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), rgba(0, 0, 0, 0.2) url('{{ asset("public/web/images/BusinessFunding.jpg") }}') no-repeat center;">
+<div class="page-header" style="background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), rgba(0, 0, 0, 0.2) url('{{ asset("web/images/BusinessFunding.jpg") }}') no-repeat center;">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -110,7 +110,7 @@
                 </div>
             </div>
 
-            
+
             @include('livewire.loans.__parts.how-to-apply')
 
             <div class="wpb_column vc_column_container vc_col-sm-12">

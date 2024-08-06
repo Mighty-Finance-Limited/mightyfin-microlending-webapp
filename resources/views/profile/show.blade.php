@@ -8,8 +8,8 @@
 
         // Use the $view variable as needed
         $view = htmlspecialchars($param);
-    } 
-    
+    }
+
     if(auth()->user()->opt_verified == 0){
         // Generate otp code
         $code = str_pad(rand(0, 99999), 5, '0', STR_PAD_LEFT);
@@ -19,14 +19,14 @@
             'opt_code' => $code
         ]);
 
-        // Send SMS 
+        // Send SMS
         $data = [
             'message'=>$code.' is your OTP verification code',
             'phone'=> '26'.auth()->user()->phone,
         ];
-        
+
         $this->send_with_server($data);
-        
+
         // Then redirect the user to go and verify
         return redirect()->route('otp');
     }
@@ -59,11 +59,11 @@
                     @default
                       <h4>Profile</h4>
                       @break
-                        
+
                 @endswitch
               </div>
               <div class="">
-     
+
                 <div class="col-xxl-12 col-xl-12 col-lg-12 px-4">
                   @if (session('success'))
                       <div class="alert alert-success">
@@ -88,7 +88,7 @@
                 </div>
                 <div id="twoFactor" class="">
                   <div class="row">
-              
+
                     {{-- <div class="col-xxl-12 col-xl-12 col-lg-12">
                         @if (Laravel\Fortify\Features::canUpdateProfileInformation())
                             @livewire('profile.logout-other-browser-sessions-form')
@@ -123,7 +123,7 @@
         </div>
       </div>
       <script>
-        
+
           document.getElementById('twoFactor').style.display = "none";
           document.getElementById('browserSession').style.display = "none";
           var view = '{{$view}}';
@@ -135,13 +135,13 @@
               docUplaodsTab()
               break;
             case 'privacy-security':
-              
+
               securityTab();
               break;
             case 'issue':
               activityTab();
               break;
-          
+
             default:
               profileTab();
               break;
@@ -172,7 +172,7 @@
             document.getElementById('docUploads').style.display = "block";
           }
       </script>
-      <script src="{{ asset('public/mfs/vendor/jquery/jquery.min.js')}}"></script>
-      <script src="{{ asset('public/mfs/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+      <script src="{{ asset('mfs/vendor/jquery/jquery.min.js')}}"></script>
+      <script src="{{ asset('mfs/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 </div>
 </x-dash-layout>

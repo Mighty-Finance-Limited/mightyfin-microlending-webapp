@@ -761,7 +761,7 @@
                                             <div class="col-md-12">
                                                 <div class="loan-container">
                                                     <div class="title-icon-container">
-                                                        <img src="{{ asset('public/mfs/images/svg/4.svg') }}"
+                                                        <img src="{{ asset('mfs/images/svg/4.svg') }}"
                                                             alt="">
                                                     </div>
 
@@ -769,17 +769,17 @@
                                                 <div class="loan-container" style="margin-top: 1rem 0px 2rem 0;">
 
                                                     <div class="text-white requirement-item">
-                                                        <img src="{{ asset('public/mfs/images/svg/2.svg') }}"
+                                                        <img src="{{ asset('mfs/images/svg/2.svg') }}"
                                                             alt="">
                                                         National Identity Card
                                                     </div>
                                                     <div class="text-white requirement-item">
-                                                        <img src="{{ asset('public/mfs/images/svg/1.svg') }}"
+                                                        <img src="{{ asset('mfs/images/svg/1.svg') }}"
                                                             alt="">
                                                         Preapproval Form & Latest Payslip
                                                     </div>
                                                     <div class="text-white requirement-item">
-                                                        <img src="{{ asset('public/mfs/images/svg/3.svg') }}"
+                                                        <img src="{{ asset('mfs/images/svg/3.svg') }}"
                                                             alt="">
                                                         3 Bank Statements
                                                     </div>
@@ -805,7 +805,7 @@
                                 <small class="text-danger" id="loanProdValidText"></small>
 
                                 <div id="loan_products" class="row row-cols-2 row-cols-lg-2 g-4">
-                                    
+
                                     @forelse ($products as $item)
                                     <div class="col">
                                         <label onclick="selectCard(this)" class="card h-70 py-2 custom-radio {{ $item->status == 0 ? 'disabled-card' : '' }}">
@@ -815,7 +815,7 @@
                                                 <div class="content">
                                                     <div class="mb-2 text-xs" style="width: 5px; height: 5px;">
                                                         {{-- {!! $item->icon !!} --}}
-                                                    </div>                                                    
+                                                    </div>
                                                     <h2>{{ ucwords($item->description) }}</h2>
                                                     <p class="skill">{{ $item->description }} {{ $item->status == 1 ? '(Available)' : '(coming soon)' }} </p>
                                                     <span class="check-icon">
@@ -836,7 +836,7 @@
                                                 <div class="content">
                                                     <div class="mb-2">
                                                         <img width="50px"
-                                                            src="{{ asset('public/web/images/1.svg') }}" />
+                                                            src="{{ asset('web/images/1.svg') }}" />
                                                     </div>
                                                     <h2>Business Loan</h2>
                                                     <p class="skill">SME (coming soon)</p>
@@ -847,7 +847,7 @@
                                             </div>
                                         </label>
                                     </div> --}}
-                                    
+
                                 </div>
 
                             </div>
@@ -1002,11 +1002,11 @@
 </div>
 <!-- pickdate -->
 <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-{{-- <script src="{{ asset('public/js/zan/dist/zangdar.min.js')}}"></script> --}}
+{{-- <script src="{{ asset('js/zan/dist/zangdar.min.js')}}"></script> --}}
 <script type="text/javascript">
     $('.is_loading').hide();
     $('.finalcontinue').hide();
-    
+
     $(document).ready(function() {
         var stepCount = 0;
         var principal = 0;
@@ -1099,7 +1099,7 @@
         //             $('#interest_value').text('Interest Rate: ' + data.def_loan_interest);
         //             $('#slider_value').text('Payback in ' + data.def_loan_duration + ' Months');
         //             $('#slider_input').attr('max', data.max_loan_duration);
-                    
+
         //             if(data.services_fees !== undefined){
         //                 data.services_fees.forEach(element => {
         //                     $('#service_charge').text(data.services_fees.service_charge
@@ -1182,7 +1182,7 @@
     // }
 
     function selectCard(selectedLabel) {
-        
+
         $('.finalcontinue').show();
         // Get the value of the selected radio button
         var selectedRadioButton = selectedLabel.querySelector('input[type="radio"]');
@@ -1219,12 +1219,12 @@
 
         $('#durationInput').attr('max', data.max_loan_duration);
         $('#durationInput').attr('min', data.min_loan_duration);
-        
+
         // Calculate CRB - Loan Formulae
         principal = $('#slidatious').val();
         rate = data.def_loan_interest;
         duration = $('#durationInput').val();
-        
+
         var my_returns = (parseInt(principal) * data.def_loan_interest) *
             parseInt(duration) + parseInt(principal);
 
@@ -1237,7 +1237,7 @@
         // Add 30 days to the current date
         var futureDate = new Date(currentDate.getTime() + (30 * 24 * 60 * 60 * 1000));
         $('#nxt_repay_date').text(futureDate);
-                
+
         if(data.services_fees !== undefined){
             data.services_fees.forEach(element => {
                 $('#service_charge').text(data.services_fees.service_charge
@@ -1326,5 +1326,5 @@
         }
     });
 </script>
-<script src="{{ asset('public/web/js/app.calculator.js')}}">
+<script src="{{ asset('web/js/app.calculator.js')}}">
 </div>

@@ -1,6 +1,6 @@
 <div>
 <!-- subheader begin -->
-<div class="page-header" style="background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), rgba(0, 0, 0, 0.2) url('{{ asset("public/web/images/BusinessFunding.jpg") }}') no-repeat center;">
+<div class="page-header" style="background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), rgba(0, 0, 0, 0.2) url('{{ asset("web/images/BusinessFunding.jpg") }}') no-repeat center;">
     <div class="container">
         <div class="row">
             <div class="col-md-12">

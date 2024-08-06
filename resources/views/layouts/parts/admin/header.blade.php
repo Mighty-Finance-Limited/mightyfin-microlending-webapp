@@ -3,7 +3,7 @@
     <div class="header-brand">
         <!--begin::Logo-->
         <a href="index.html">
-            <img alt="Logo" src="{{ asset('public/mfs/admin/assets/media/logos/logo.png')}}" class="h-25px h-lg-25px" />
+            <img alt="Logo" src="{{ asset('mfs/admin/assets/media/logos/logo.png')}}" class="h-25px h-lg-25px" />
         </a>
         <!--end::Logo-->
         <!--begin::Aside minimize-->

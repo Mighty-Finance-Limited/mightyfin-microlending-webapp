@@ -548,7 +548,7 @@
         </div>
         <!-- pickdate -->
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-        {{-- <script src="{{ asset('public/js/zan/dist/zangdar.min.js')}}"></script> --}}
+        {{-- <script src="{{ asset('js/zan/dist/zangdar.min.js')}}"></script> --}}
         <script type="text/javascript">
             $(document).ready(function () {
                 var principal = 0;

@@ -1,6 +1,6 @@
 <div class="nav-header">
     <a href="{{ route('dashboard') }}" class="brand-logo">
-        <img width="65" src="{{ asset('public/images/logo-full.png') }}" alt="" srcset="">
+        <img width="65" src="{{ asset('images/logo-full.png') }}" alt="" srcset="">
     </a>
     <div class="nav-control">
         <div class="hamburger">
@@ -15,7 +15,7 @@
                 <rect y="11" width="4" height="4" rx="2" fill="#2A353A"/>
                 <rect x="22" y="22" width="4" height="4" rx="2" fill="#2A353A"/>
                 <rect y="22" width="4" height="4" rx="2" fill="#2A353A"/>
-            </svg>		
+            </svg>
         </div>
     </div>
 </div>

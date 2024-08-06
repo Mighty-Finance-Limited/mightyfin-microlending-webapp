@@ -4,8 +4,8 @@
             <div id="smartwizard" class="form-wizard order-create">
                 <ul class="nav nav-wizard">
                     <li>
-                        <a class="nav-link" href="#wizard_Service"> 
-                            <span>1</span> 
+                        <a class="nav-link" href="#wizard_Service">
+                            <span>1</span>
                         </a>
                     </li>
                     <li>
@@ -56,7 +56,7 @@
                                     <select type="text" name="gender" value="{{ auth()->user()->gender }}" class="form-control">
                                         <option value="Male">Male</option>
                                         <option value="Female">Female</option>
-                                    </select>                                
+                                    </select>
                                 </div>
                             </div>
                             <div class="col-lg-6 mb-2">
@@ -72,7 +72,7 @@
                                     </select>
                                 </div>
                             </div>
-                            
+
                             <div class="col-lg-6 mb-2">
                                 <div class="mb-3">
                                     <label class="text-label form-label">Amount (ZMW)</label>
@@ -135,7 +135,7 @@
                                         <option value="Work Mate">Work Mate</option>
                                         <option value="Relative">Relative</option>
                                         <option value="Close Friend">Close Friend</option>
-                                    </select> 
+                                    </select>
                                 </div>
                             </div>
                             <div class="col-lg-6 mb-2">
@@ -144,7 +144,7 @@
                                     <select type="text" name="g_gender" class="form-control">
                                         <option value="Male">Male</option>
                                         <option value="Female">Female</option>
-                                    </select> 
+                                    </select>
                                 </div>
                             </div>
                         </div>
@@ -181,7 +181,7 @@
                                         <option value="Work Mate">Work Mate</option>
                                         <option value="Relative">Relative</option>
                                         <option value="Close Friend">Close Friend</option>
-                                    </select> 
+                                    </select>
                                 </div>
                             </div>
                             <div class="col-lg-6 mb-2">
@@ -190,7 +190,7 @@
                                     <select type="text" name="g2_gender" class="form-control">
                                         <option value="Male">Male</option>
                                         <option value="Female">Female</option>
-                                    </select> 
+                                    </select>
                                 </div>
                             </div>
                         </div>
@@ -309,7 +309,7 @@
 
         <div id="loaderdashboard" class="mx-auto">
             <div class="container-fluid content-center justify-center items-center">
-                <img width="60" src="{{ asset('public/loader/loading.gif') }}">
+                <img width="60" src="{{ asset('loader/loading.gif') }}">
                 <span>Please wait a minute</span>
             </div>
         </div>

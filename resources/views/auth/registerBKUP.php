@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Sign Up - Mighty Finance Solution</title>
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('public/web/images/favicon.png') }}">
-    <link href="{{ asset('public/theme/css/style.css') }}" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('web/images/favicon.png') }}">
+    <link href="{{ asset('theme/css/style.css') }}" rel="stylesheet">
 
 </head>
 
@@ -22,11 +22,11 @@
                     <div class="authincation-content">
                         <div class="row no-gutters">
                             <div class="col-xl-12">
-                                <div class="auth-form">									
-									<div class="logo justify-content-center justify-center items-center text-center"> 
-										<a href="{{ route('welcome') }}"> 
-											<img width="50" src="{{ asset('public/web/images/logo.png') }}" alt=""> 
-										</a> 
+                                <div class="auth-form">
+									<div class="logo justify-content-center justify-center items-center text-center">
+										<a href="{{ route('welcome') }}">
+											<img width="50" src="{{ asset('web/images/logo.png') }}" alt="">
+										</a>
 									</div>
                                     <h4 class="text-center mb-4">Create your account</h4>
 									<x-jet-validation-errors class="mb-4" style="color:red" />
@@ -82,10 +82,10 @@
 	Scripts
 ***********************************-->
 <!-- Required vendors -->
-<script src="{{ asset('public/theme/vendor/global/global.min.js') }}"></script>
-<script src="{{ asset('public/theme/vendor/bootstrap-select/dist/js/bootstrap-select.min.js') }}"></script>
-<script src="{{ asset('public/theme/js/custom.min.js') }}"></script>
-<script src="{{ asset('public/theme/js/deznav-init.js') }}"></script>
+<script src="{{ asset('theme/vendor/global/global.min.js') }}"></script>
+<script src="{{ asset('theme/vendor/bootstrap-select/dist/js/bootstrap-select.min.js') }}"></script>
+<script src="{{ asset('theme/js/custom.min.js') }}"></script>
+<script src="{{ asset('theme/js/deznav-init.js') }}"></script>
 
 </body>
 </html>

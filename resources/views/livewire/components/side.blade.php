@@ -1,20 +1,20 @@
 <div class="deznav">
-    <div style="background-image: url('{{ asset("public/images/bg.png'") }});background-size: cover;background-color: #7b1919;" class="deznav-scroll">
+    <div style="background-image: url('{{ asset("images/bg.png'") }});background-size: cover;background-color: #7b1919;" class="deznav-scroll">
         <ul class="metismenu" id="menu">
             <li>
                 <a href="{{ route('dashboard') }}" aria-expanded="false">
                     <span class="menu-icon">
-                        <img width="25" src="{{ asset('public/images/7.svg') }}" alt="">
+                        <img width="25" src="{{ asset('images/7.svg') }}" alt="">
                     </span>
                     <span class="nav-text mt-8">Dashboard</span>
                 </a>
             </li>
-            
+
             @can('view clientele')
             <li>
                 <a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
                     <div class="menu-icon">
-                        <img width="25" src="{{ asset('public/images/1.svg') }}" alt="">
+                        <img width="25" src="{{ asset('images/1.svg') }}" alt="">
                     </div>
                     <span class="nav-text">Manage Clientele</span>
                 </a>
@@ -30,7 +30,7 @@
             <li>
                 <a class="has-arrow" href="javascript:void(0);" aria-expanded="false">
                     <div class="menu-icon">
-                        <img width="25" src="{{ asset('public/images/2.svg') }}" alt="">
+                        <img width="25" src="{{ asset('images/2.svg') }}" alt="">
                     </div>
                     @role('user')
                     <span class="nav-text">My Loan</span>
@@ -57,30 +57,30 @@
                     @endcan
                     @can('view loan calculator')
                     <li><a href="{{ route('view-repayment-calculator') }}">Loan Calculator</a></li>
-                    @endcan 
+                    @endcan
                     @role('user')
                     {{-- <li><a href="{{ route('withdraw-requests') }}">Withdraw Requests</a></li> --}}
                     @endrole
                 </ul>
             </li>
             @endcan
-            
+
             @can('view employees')
             <li>
                 <a class="" href="{{ route('employees') }}" aria-expanded="false">
                     <div class="menu-icon">
-                        <img width="25" src="{{ asset('public/images/1.svg') }}" alt="">
+                        <img width="25" src="{{ asset('images/1.svg') }}" alt="">
                     </div>
                     <span class="nav-text">Employees</span>
                 </a>
             </li>
             @endcan
-            
+
             @can('view accounting')
             <li>
                 <a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
                     <div class="menu-icon">
-                        <img width="25" src="{{ asset('public/images/1.svg') }}" alt="">
+                        <img width="25" src="{{ asset('images/1.svg') }}" alt="">
                     </div>
                     <span class="nav-text">Accounting</span>
                 </a>
@@ -98,7 +98,7 @@
             <li>
                 <a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
                     <div class="menu-icon">
-                        <img width="25" src="{{ asset('public/images/1.svg') }}" alt="">
+                        <img width="25" src="{{ asset('images/1.svg') }}" alt="">
                     </div>
                     <span class="nav-text">KYC</span>
                 </a>
@@ -112,7 +112,7 @@
             <li>
                 <a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
                     <div class="menu-icon">
-                        <img width="25" src="{{ asset('public/images/1.svg') }}" alt="">
+                        <img width="25" src="{{ asset('images/1.svg') }}" alt="">
                     </div>
                     <span class="nav-text">Reports</span>
                 </a>
@@ -128,7 +128,7 @@
             {{-- <li>
                 <a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
                     <div class="menu-icon">
-                    <img width="25" src="{{ asset('public/images/3.svg') }}" alt="">
+                    <img width="25" src="{{ asset('images/3.svg') }}" alt="">
                     </div>
                     <span class="nav-text">Support/Chat</span>
                 </a>
@@ -147,7 +147,7 @@
             <li>
                 <a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
                     <div class="menu-icon">
-                    <img width="25" src="{{ asset('public/images/4.svg') }}" alt="">
+                    <img width="25" src="{{ asset('images/4.svg') }}" alt="">
                     </div>
                     <span class="nav-text">Settings</span>
                 </a>
@@ -167,8 +167,8 @@
                     </li> --}}
                     <li><a class="has-arrow" href="javascript:void(0);" aria-expanded="false">CMS Manager</a>
                         <ul aria-expanded="false">
-                            <li><a href="{{ route('contact-settings') }}">Contact Details</a></li> 
-                            <li><a href="{{ route('careers-settings') }}">Careers</a></li> 
+                            <li><a href="{{ route('contact-settings') }}">Contact Details</a></li>
+                            <li><a href="{{ route('careers-settings') }}">Careers</a></li>
                             {{-- <li><a href="email-inbox.html">Social Media</a></li>
                             <li><a href="email-read.html">Policies</a></li>
                             <li><a href="email-read.html">Terms & Conditions</a></li> --}}
@@ -182,7 +182,7 @@
             @endcan
             {{-- <li><a class="has-arrow " href="javascript:void(0);" aria-expanded="false">
                     <div class="menu-icon">
-                    <img width="25" src="{{ asset('public/images/6.svg') }}" alt="">
+                    <img width="25" src="{{ asset('images/6.svg') }}" alt="">
                     </div>
                     <span class="nav-text">Logout</span>
                 </a>
